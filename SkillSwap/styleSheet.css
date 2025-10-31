@@ -62,7 +62,7 @@
   border: none;
 }
 
-.menu-vertical-sn {
+.menu-vertical-lp {
   list-style: none;
   padding: 0;
   position: absolute;
@@ -71,17 +71,17 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.menu-horizontal-opciones li:hover .menu-vertical-sn {
+.menu-horizontal-opciones li:hover .menu-vertical-lp {
   display: block;
 }
 
-.menu-vertical-sn li a {
+.menu-vertical-lp li a {
   padding: 15px 15px 15px 20px;
   margin: 5px;
   color: white;
 }
-.menu-vertical-sn li a:hover {
-  color: red;
+.menu-vertical-lp li a:hover {
+  color: #ffc107;
 }
 
 .logo {

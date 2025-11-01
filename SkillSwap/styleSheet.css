@@ -136,44 +136,48 @@
 
 .division-general-nosotros {
   display: flex;
+  flex-direction: column;
   gap: 50px;
   justify-content: center;
 }
-
+.division-contenido-row{
+  display: flex;
+  flex-direction: row; 
+  gap: 50px; 
+  justify-content: center;
+  width: 100%;
+}
 .division-nosotros-txt {
   justify-content: center;
 }
 
-.div-menu-vertical-ns-gral {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
+.elementos-nosotros-txt{
+   display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 30px; 
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 90px;
 }
-
-.menu-vertical-ns li div {
-  justify-content: center;
-  align-items: center;
+.llamado-accion-boton2{
+   margin: 30px 0px;
+  font-family: inherit;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffc107;
+  border: 2px solid #ffc107;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 0 auto; 
 }
-
-.menu-vertical-ns {
-  list-style: none;
-  justify-content: center;
-}
-
-.div-menu-vertical-ns-txt h6 {
-  padding: 20px 0px 10px 0px;
-  font-size: 18px;
-  justify-content: center;
-}
-
-.div-menu-vertical-ns-txt p {
-  font-size: 15px;
-  justify-content: center;
-}
-
-.div-menu-vertical-ns-img {
-  padding-top: 20px;
-  justify-content: center;
+.ns-icono img {
+    /* Define un tamaño fijo para todos los iconos */
+    width: 50px; 
+    height: auto;
 }
 
 .division-nosotros-ima img {
@@ -182,11 +186,23 @@
 
 /* Seccion 3 */
 .seccion-socios{
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px;
+  
 }
 
-.seccion-socios h3 {
-  text-align: left;
-  padding-left: 100px;
-  font-size: 25px;
+.socios-logos img{
+  width: auto;
+  height: auto;
+  
+}
+
+.seccion-footer {
+  background-color: #193b69;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;   
 }

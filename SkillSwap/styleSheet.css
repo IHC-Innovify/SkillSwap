@@ -206,3 +206,69 @@
   padding: 20px 0;
   margin-top: 50px;   
 }
+
+.seccion-formulario{
+  background-color: #f0f8ff;
+  padding: 40px;
+  border: 3px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+.div-cont-formulario{
+background-color: #ffc107;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+}
+.formulario-contactenos label{
+ display: block;
+  font-weight: 800;
+  margin-bottom: 8px;
+  
+}
+.campo{
+   background-color: rgb(255, 255, 255);
+  border: 1px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+input[type="text"], input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+   background-color: white;
+}
+
+.lista-interes-uni,
+.lista-sexo-form {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.lista-interes-uni input,
+.lista-sexo-form input{
+  margin-right: 10px;
+}
+button{
+  background-color: #005A9C;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

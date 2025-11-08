@@ -158,7 +158,7 @@
   cursor: pointer;
 }
 
-/* Seccion 2 */
+/* -----------Seccion 2 ------*/
 .seccion-nosotros {
   margin: 50px;
   height: 100%;
@@ -240,3 +240,111 @@
   margin-top: 50px;   
 }
 
+.seccion-user-estudiante-aprendiz{
+  background-color: #005a9c;
+margin: 50px;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px;
+}
+.division-general-estudiantes-aprendices{
+background-color: aqua;
+display: flex;
+flex-direction: column;
+gap: 50px;
+justify-content: center;
+}
+
+.division-user-estudiante-aprendiz-row{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.division-user-estudiante-aprendiz-txt{
+justify-content: center;
+}
+
+.elementos-user-estudiante-aprendiz-txt{
+  display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 30px; 
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.elementos-user-estudiante-aprendiz-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementos-user-estudiante-aprendiz-video video{
+  width: 500px;
+  height: auto;
+ 
+}
+
+
+
+.seccion-user-estudiante-tutores{
+  background-color: #005a9c;
+margin: 50px;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px;
+}
+
+.division-general-estudiantes-tutores{
+background-color: aqua;
+display: flex;
+flex-direction: column;
+gap: 50px;
+justify-content: center;
+}
+
+.division-user-estudiante-tutores-row{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.division-user-estudiante-tutores-txt{
+justify-content: center;
+}
+
+.elementos-user-estudiante-tutores-txt{
+  display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 30px; 
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.elementos-user-estudiante-tutores-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementos-user-estudiante-tutores-video video{
+  width: 500px;
+  height: auto;
+ 
+}

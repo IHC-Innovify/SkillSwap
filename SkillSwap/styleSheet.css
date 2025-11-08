@@ -380,28 +380,120 @@ justify-content: center;
 /* aca va el coordinador */
 .seccion-user-coordinador-registro{
   background-color: #005a9c;
-padding-top: 90px;
-margin-left: 50px;
-margin-right: 50px;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
+  padding-top: 90px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.seccion-user-coordinador-actividades{
-background-color: #ffc107;
-margin: 50px;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
+.division-general-coordinador-registro{
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
 }
+
+.titulo-division-coordinador-registro{
+  background-color: aqua;
+  color: white;
+  font-size: 36px;
+  text-align: left;
+}
+.contenido-division-coordinador-registro{
+  background-color: #d3c085;
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  align-self: justify;
+}
+
+.imagen-division-coordinador-registro{
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.registro-cel {
+  width: auto;
+  height: 400px;
+}
+
+.registro-web {
+  width: 550px;
+  height: auto;
+}
+.seccion-user-coordinador-actividades{
+  background-color: #ffc107;
+  margin: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.division-general-coordinador-actividades{
+  background-color: rgb(13, 197, 197);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.titulo-division-coordinador-actividades{
+  background-color: lightgreen;
+  color: white;
+  font-size: 36px;
+  text-align: left;
+  width: 100%;
+  align-self: flex-start;
+
+}
+.contenido-division-coordinador-actividades ul{
+  list-style: none;
+  padding-left: 20px;
+}
+.contenido-division-coordinador-actividades li{
+  margin-bottom: 55px;
+  font-size: 18px;
+}
+.imagen-division-coordinador-actividades{
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+
+}
+.dh-movil {
+  width: auto;
+  height: 400px;
+}
+
+.dh-web {
+  width: 550px;
+  height: auto;
+}
+
+.contenido-division-coordinador-actividades{
+  background-color: #d3c085;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row; 
+  gap: 50px;
+
+}
+
+
 .seccion-user-coordinador-universidades{
   background-color: aquamarine;
-margin: 50px;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
+  margin: 50px;
+  height: 100%;
+  align-items: center;
 }

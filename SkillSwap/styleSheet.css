@@ -239,18 +239,18 @@
   padding: 20px 0;
   margin-top: 50px;   
 }
-
+/* aca va el cliente */
 .seccion-user-estudiante-aprendiz{
-  background-color: #005a9c;
-margin: 50px;
+padding-top: 90px;
+margin-left: 50px;
+margin-right: 50px;
 height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 100px;
+
 }
 .division-general-estudiantes-aprendices{
-background-color: aqua;
 display: flex;
 flex-direction: column;
 gap: 50px;
@@ -258,7 +258,6 @@ justify-content: center;
 }
 
 .division-user-estudiante-aprendiz-row{
-  background-color: yellow;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -281,32 +280,29 @@ justify-content: center;
     margin-bottom: 90px;
 }
 
-.elementos-user-estudiante-aprendiz-video{
+
+.elementos-user-estudiante-aprendiz-img{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
-
-.elementos-user-estudiante-aprendiz-video video{
-  width: 500px;
+.elementos-user-estudiante-aprendiz-img img{
+  width: 900px;
   height: auto;
- 
 }
-
 
 
 .seccion-user-estudiante-tutores{
-  background-color: #005a9c;
 margin: 50px;
 height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 100px;
 }
 
 .division-general-estudiantes-tutores{
-background-color: aqua;
 display: flex;
 flex-direction: column;
 gap: 50px;
@@ -314,7 +310,6 @@ justify-content: center;
 }
 
 .division-user-estudiante-tutores-row{
-  background-color: yellow;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -337,6 +332,18 @@ justify-content: center;
     margin-bottom: 90px;
 }
 
+.elementos-user-estudiante-tutores-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.elementos-user-estudiante-tutores-img img{
+  width: 900px;
+  height: auto;
+}
+
 .elementos-user-estudiante-tutores-video{
   display: flex;
   justify-content: center;
@@ -346,5 +353,26 @@ justify-content: center;
 .elementos-user-estudiante-tutores-video video{
   width: 500px;
   height: auto;
- 
+}
+
+.videos-estudiantes-tutores{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-videos-estudiantes-tutores{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+
+}
+.video-user-estudiante-aprendiz {
+  width: 500px;
+  height: auto;
+}
+
+.video-user-estudiante-tutores{
+  width: 500px;
+  height: auto;
 }

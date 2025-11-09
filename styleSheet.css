@@ -533,10 +533,10 @@ justify-content: center;
 }
 
 .contenido-division-coordinador-universidades li{
+  padding-top: 30px;
   margin-bottom: 45px;
   font-size: 18px;
   font-weight: 600;
- 
 }
 
 .logo-unmsm{

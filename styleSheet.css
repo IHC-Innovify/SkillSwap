@@ -581,3 +581,93 @@ justify-content: center;
   width: 550px;
   height: auto; 
 }
+/* Fin del coordinador */
+/*comienza la seccion socios*/
+.seccion-socios2{
+  padding-top: 90px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #005a9c;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titulos-universidades-asociadas{
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 10px 0 30px 0 ;
+}
+
+.seccion-socios-universidades{
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #699fc3;
+}
+
+.seccion-socios-universidades ul{
+  list-style: none;
+  padding-left: 20px;
+}
+
+.seccion-socios-universidades li{
+  margin-bottom: 45px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.imagen-division-socios-universidades{
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  width: 100%;
+}
+.imagen-division-socios-universidades img{
+ align-self: center;
+}
+.imagen-division-socios-universidades p{
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.seccion-socios-afiliate{
+
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #a7aeb3;
+}
+
+.seccion-socios-afiliate h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 10px 0 30px 0 ;
+}
+.imagen-division-socios-afiliate{
+  background-color: #a09573;
+  margin-bottom: 15px;
+}
+
+.imagen-division-socios-afiliate p{
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 600 ;
+}
+.beneficios-socios-afiliate h3{
+  background-color: #d3c085;
+  margin: 0 0 20px 0;
+}
+.beneficios-socios-afiliate ul{
+  background-color: aqua;
+  list-style: none;
+  text-align: left;
+}
+
+.beneficios-socios-afiliate li{
+  margin-bottom: 30px;
+  font-size: 18px;
+}

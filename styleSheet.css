@@ -20,17 +20,17 @@
   border-bottom: 1px solid #c7c6cd;
 }
 
-.menu-horizontal-opciones {
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-around;
-  color: black;
-  width: 100%;
-  padding: 0;
-  align-items: center;
-  gap: 20px;
-}
+    .menu-horizontal-opciones {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      color: black;
+      width: 100%;
+      padding: 0;
+      align-items: center;
+      gap: 20px;
+    }
 .menu-horizontal-opciones li a {
   list-style: none;
   text-decoration: none;
@@ -250,21 +250,25 @@ background-color: rgba(0, 0, 0, 0.05);
 
 }
 .division-general-estudiantes-aprendices{
-display: flex;
-flex-direction: column;
-gap: 50px;
-justify-content: center;
-margin-left: 50px;
-margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
 }
-
+.titulo-seccion-user-estudiante-aprendiz{
+  background-color: #ffffff;
+  padding: 10px 20px;
+  width: 100%;
+  border-bottom: 2px solid rgba(34, 85, 214, 0.5);
+}
 .division-user-estudiante-aprendiz-row{
   display: flex;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
-  width: 100%;
 
+    margin-left: 50px;
+  margin-right: 50px;
 }
 
 .division-user-estudiante-aprendiz-txt{
@@ -296,26 +300,29 @@ justify-content: center;
 
 
 .seccion-user-estudiante-tutores{
-background-color: rgba(0, 0, 0, 0.05);
+background: rgba(0, 0, 0, 0.1);
 height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
+border-bottom: 2px solid rgba(34, 85, 214, 0.5);
+
 }
 
 .division-general-estudiantes-tutores{
- 
   display: flex;
   flex-direction: column;
   gap: 50px;
   justify-content: center;
+  
 }
 
 .titulo-seccion-user-estudiante-tutores{
   background-color: #ffffff;
   padding: 10px 20px;
   width: 100%;
-
+  border-bottom: 2px solid rgba(34, 85, 214, 0.5);
+  border-top: 2px solid rgba(34, 85, 214, 0.5);
 }
 
 .division-user-estudiante-tutores-row{
@@ -325,7 +332,6 @@ align-items: center;
   justify-content: center;
   margin-left: 50px;
   margin-right: 50px;
-
 }
 
 .division-user-estudiante-tutores-txt{

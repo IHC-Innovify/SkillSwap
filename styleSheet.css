@@ -12,6 +12,7 @@ body {
 }
 
 .barra-navegacion {
+  /*quiero que mi barra de navegacion se quede fija ahi*/
   display: flex;
   background-color: #ffffff;
   margin: 0;
@@ -22,6 +23,9 @@ body {
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #c7c6cd;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
     .menu-horizontal-opciones {
@@ -864,29 +868,63 @@ justify-content: center;
 }
 
 /* Contenedor principal de la videollamada */
-.seccion-videollamada {
+.seccion-videollamada-principal {
     display: flex;
+    /* Altura total de la ventana menos la barra de navegación (75px) */
     height: calc(100vh - 75px); 
     width: 100%;
-    position: relative; 
 }
 
-/* Área de video principal */
 .video-area-principal {
-    flex-grow: 1; 
-    background-color: #e0e0e0; 
+    flex-grow: 1; /* Ocupa todo el espacio restante */
+    background-color: #e0e0e0; /* Color del fondo gris principal */
+    position: relative; /* Para posicionar tabs y controles */
+    height: 100%;
+    border-radius: 8px; /* Bordes redondeados en el área gris */
+    margin: 15px; /* Un pequeño margen como en la imagen */
+}
+
+/* Pestañas de Pizarra y Chat */
+.video-opciones-tabs {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.opcion-tab {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    background-color: #ccc; /* Color de pestaña inactiva */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    gap: 8px;
 }
 
-/* 4. Barra lateral de videos */
+.opcion-tab.activo {
+    background-color: #b0b0b0; /* Pestaña activa (gris más oscuro) */
+    color: #000;
+}
+
+.icono-tab {
+    font-size: 18px;
+}
+
+
+/* Barra lateral de videos */
 .video-sidebar {
     width: 320px; 
     flex-shrink: 0; 
     background-color: #ffffff; 
-    border-left: 1px solid #c7c6cd; 
+    border-left: 1px solid #c7c6cd; /* Borde de tu styleSheet.css */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -900,23 +938,17 @@ justify-content: center;
     width: 100%;
     border-radius: 12px;
     overflow: hidden; 
+    height: 300px;
+    background-color: #ffc107;
 }
 
 .video-placeholder-sidebar {
     width: 100%;
-    padding-bottom: 56.25%; 
-    background-color: #333; 
-
+    height: auto; 
+    aspect-ratio: 16 / 9; /* Proporción de video */
+    background-color: #333; /* Placeholder */
+    object-fit: cover; /* Para la <img> */
 }
-
-
-#video-alexandra {
-    background-color: #5a67d8; 
-}
-#video-carlos {
-    background-color: #319795;
-}
-
 
 .nombre-participante-video {
     position: absolute;
@@ -930,11 +962,11 @@ justify-content: center;
     font-weight: 500;
 }
 
-/*Controles flotantes de la videollamada */
+/* Controles flotantes de la videollamada */
 .controles-flotantes-video {
     position: absolute;
-    bottom: 100px; 
-    left: 300px; 
+    bottom: 25px; 
+    left: 50%; 
     transform: translateX(-50%);
     
     background-color: #ffffff;
@@ -979,6 +1011,165 @@ justify-content: center;
 .control-btn-video.colgar:hover {
     background-color: #c82333; 
 }
+
+/*ACA VA A IR LA PIAZAARA DEL CHAT*/
+
+.seccion-videollamada-pizarra {
+    display: flex;
+    height: calc(100vh - 75px); 
+    width: 100%;
+}
+
+.video-area-principal-pizarra {
+    flex-grow: 1; 
+    background-color: #e0e0e0; /* Color del fondo gris contenedor */
+    display: flex;
+    flex-direction: column; /* Organiza tabs y contenido verticalmente */
+    height: 100%;
+    margin: 15px;
+    border-radius: 8px;
+    position: relative; /* Para posicionar los controles */
+}
+
+.video-opciones-tabs-pizarra {
+    display: flex;
+    padding: 8px 8px 0 8px; 
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.opcion-tab-pizarra {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    background-color: #ccc; /* Color de pestaña inactiva */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0; /* Redondeado solo arriba */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.opcion-tab-pizarra.activo {
+    background-color: #ffffff; /* Pestaña activa es blanca */
+    color: #000;
+}
+
+.icono-tab-pizarra {
+    font-size: 18px;
+}
+
+.video-contenido-principal-pizarra {
+    flex-grow: 1; /* Ocupa el resto del espacio */
+    padding: 0 8px 8px 8px; /* Espaciado inferior y laterales */
+    height: 100%;
+    overflow: hidden;
+}
+
+.pizarra-virtual {
+    background-color: #ffffff; /* La pizarra es blanca */
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 8px 8px; /* Redondeado solo abajo */
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+/* Barra lateral de videos */
+.video-sidebar-pizarra {
+    width: 400px; 
+    flex-shrink: 0;
+    background-color: #ffffff; 
+    border-left: 1px solid #c7c6cd; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.video-participante-pizarra {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden; 
+    background-color: #ffc107;
+}
+
+.video-placeholder-sidebar-pizarra {
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 16 / 9; /* Proporción 16:9 */
+    background-color: #333; /* Placeholder */
+    object-fit: cover; /* Para la <img> */
+}
+
+.nombre-participante-video-pizarra {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Controles flotantes */
+.controles-flotantes-video-pizarra {
+    position: absolute;
+    bottom: 25px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    
+    background-color: #ffffff;
+    border-radius: 20px; 
+    padding: 12px 20px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.control-btn-video-pizarra {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 12px; 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; 
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.control-btn-video-pizarra:hover {
+    background-color: #dcdcdc;
+}
+
+.control-btn-video-pizarra.mic-off {
+    color: #DC3545; 
+}
+
+.control-btn-video-pizarra.colgar {
+    background-color: #DC3545;
+    color: white;
+}
+
+.control-btn-video-pizarra.colgar:hover {
+    background-color: #c82333; 
+}
+
+/* Aca va la seccion de calificacion */
 
 .seccion-calificacion {
     width: 100%;

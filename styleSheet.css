@@ -6,6 +6,10 @@
   box-sizing: border-box; /* ayuda a que los tamaños sean más predecibles */
   font-family: "Inter", sans-serif;
 }
+body {
+    background-color: #f7f9fc; /* Un fondo gris muy claro */
+    margin-top: 75px; /* Espacio para la barra de navegación fija */
+}
 
 .barra-navegacion {
   display: flex;
@@ -1233,4 +1237,523 @@ justify-content: center;
 .tag-busqueda:hover {
     background-color: #e0a800; 
     color: #212529;
+}
+
+/*aca va seccion sesiones*/
+.seccion-sesiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 25px; /* Espacio entre elementos */
+}
+
+.titulo-sesiones {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #005a9c; /* Azul primario de tu proyecto */
+    text-align: center;
+}
+
+.subtitulo-sesiones {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    width: 100%;
+    max-width: 900px; /* Alineado con las tarjetas */
+    text-align: left;
+    margin-top: 15px;
+}
+
+.lista-sesiones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.tarjeta-sesion {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    transition: box-shadow 0.2s ease;
+}
+
+.tarjeta-sesion:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sesion-imagen-container {
+    position: relative;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.sesion-imagen {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px; /* Bordes redondeados para el auto */
+}
+
+.sesion-imagen.redonda {
+    border-radius: 50%; /* Bordes redondos para el león */
+}
+
+.icono-verificado-sesion {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 24px;
+    color: #005a9c; /* Azul primario */
+    background-color: white; /* Para que resalte sobre la imagen */
+    border-radius: 50%;
+    display: flex;
+    padding: 2px;
+}
+
+.indicador-online-sesion {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #28a745; /* Verde online */
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.sesion-detalles {
+    flex-grow: 1; /* Ocupa el espacio del medio */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sesion-detalles p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-family: "Inter", sans-serif;
+}
+
+.sesion-detalles strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.sesion-nombre-tutor {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+}
+
+.sesion-acciones {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 25px;
+    border-left: 2px solid #e0e0e0; /* Línea divisoria gris */
+}
+
+.icono-accion-sesion {
+    font-size: 36px; /* Iconos grandes */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icono-accion-sesion.favorito {
+    color: #DC3545; /* Rojo para "favorito" */
+}
+
+.icono-accion-sesion.no-favorito {
+    color: #aaa; /* Gris para "no favorito" */
+}
+
+.icono-accion-sesion.ver {
+    color: #005a9c; /* Azul para "ver" */
+}
+
+/*aca comienza el resultados de busqueda*/
+
+.seccion-resultados-busqueda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Usamos el mismo padding y max-width que en 'busqueda.css' 
+      para que la barra de búsqueda se vea igual.
+    */
+    padding: 60px 20px; 
+    box-sizing: border-box;
+}
+
+.grid-resultados {
+    display: grid;
+    /* Crea 2 columnas en pantallas grandes, 
+      y 1 columna en pantallas más pequeñas.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 25px;
+    width: 100%;
+    /* Un max-width un poco más grande para que quepan 
+      dos tarjetas cómodamente.
+    */
+    max-width: 1100px; 
+    margin-top: 40px; /* Espacio después de la barra de búsqueda */
+}
+
+.tarjeta-tutor {
+    position: relative; /* Para el icono de corazón */
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px; /* Bordes redondeados como en la imagen */
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-tutor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.icono-corazon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #aaa; /* Color del corazón vacío */
+    text-decoration: none;
+}
+
+.icono-corazon.favorito {
+    color: #DC3545; /* Color rojo (usado en tu reporte) */
+}
+
+.tutor-columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 120px; /* Ancho fijo para la columna de imagen/rating */
+}
+
+.tutor-imagen-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.tutor-imagen-perfil {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee; /* Placeholder si la img está vacía */
+}
+
+.indicador-online {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 18px;
+    height: 18px;
+    background-color: #28a745; /* Verde online */
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.tutor-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px; /* Espacio entre imagen y rating */
+}
+
+.icono-estrella {
+    font-size: 16px;
+    color: #ffc107; /* Amarillo de tu styleSheet */
+}
+
+.rating-numero {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.icono-verificado-tutor {
+    font-size: 16px;
+    color: #005a9c; /* Azul primario */
+}
+
+.tutor-columna-derecha {
+    flex-grow: 1; /* Ocupa el resto del espacio */
+    display: flex;
+    flex-direction: column;
+}
+
+.tutor-nombre {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 10px 0;
+}
+
+.tutor-detalle {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 5px 0;
+    line-height: 1.4;
+}
+
+.tutor-detalle strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.tutor-tags {
+    display: flex;
+    flex-wrap: wrap; /* Para que los tags bajen si no caben */
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tag-tutor {
+    background-color: #ffc107; /* Amarillo de tu styleSheet */
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 999px; /* Píldoras */
+}
+
+/* Fin de resultados de busqueda */
+
+/*Aca inicia la seccion de perfil-tutor- la ventanita esa*/
+.seccion-perfil-tutor {
+    width: 100%;
+    padding: 50px 20px; /* Espaciado generoso */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-perfil-tutor {
+    background-color: #ffffff;
+    border: 3px solid #212529; /* Borde negro como en la imagen */
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    gap: 40px; /* Espacio entre columna izquierda y derecha */
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Columna Izquierda */
+.perfil-columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px; /* Ancho fijo para esta columna */
+    flex-shrink: 0;
+}
+
+.perfil-imagen-container {
+    position: relative;
+    width: 250px; /* Tamaño grande de la imagen */
+    height: 250px;
+}
+
+.perfil-imagen-grande {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee; /* Placeholder */
+}
+
+.indicador-online-perfil {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 35px; /* Indicador más grande */
+    height: 35px;
+    background-color: #28a745; /* Verde online */
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.perfil-verificacion,
+.perfil-rating-grande {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.icono-verificado-perfil,
+.icono-estrella-perfil {
+    font-size: 22px;
+}
+
+.icono-estrella-perfil {
+    color: #ffc107; /* Amarillo de tu styleSheet */
+}
+
+.boton-solicitar-tutoria {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px; /* Botón tipo píldora */
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.boton-solicitar-tutoria:hover {
+    background-color: #004a80;
+}
+
+/* Columna Derecha */
+.perfil-columna-derecha {
+    flex-grow: 1; /* Ocupa el resto del espacio */
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-header-derecha {
+    display: flex;
+    justify-content: space-between; /* Nombre a la izq, iconos a la der */
+    align-items: flex-start; /* Alinea arriba */
+    border-bottom: 2px solid #f0f0f0; /* Línea divisoria sutil */
+    padding-bottom: 15px;
+}
+
+.perfil-nombre-grande {
+    font-size: 32px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+.perfil-iconos-header {
+    display: flex;
+    gap: 15px;
+    padding-top: 5px; /* Baja un poco los iconos */
+}
+
+.icono-accion-perfil {
+    font-size: 28px;
+    color: #555;
+    text-decoration: none;
+}
+
+.perfil-detalles-tutor {
+    margin-top: 20px;
+}
+
+.perfil-detalles-tutor p {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 8px 0;
+    line-height: 1.5;
+}
+
+.perfil-detalles-tutor strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.perfil-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.perfil-tag {
+    background-color: #ffc107; /* Amarillo */
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 999px;
+}
+
+.perfil-descripcion {
+    margin-top: 25px;
+}
+
+.perfil-descripcion h3,
+.perfil-reseñas h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.perfil-descripcion p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.perfil-reseñas {
+    margin-top: 30px;
+}
+
+.tarjeta-reseña {
+    display: flex;
+    gap: 15px;
+    background-color: #f7f9fc; /* Fondo gris claro */
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.reseña-imagen-perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee;
+    flex-shrink: 0;
+}
+
+.reseña-contenido h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 5px 0;
+}
+
+.reseña-contenido p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
 }

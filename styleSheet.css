@@ -1757,3 +1757,355 @@ justify-content: center;
     line-height: 1.5;
     margin: 0;
 }
+
+
+
+/* COMIENZA EL COORDINADOR*/
+
+
+.panel-coordinador-seccion {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Organiza el H1 y el grid verticalmente */
+    align-items: center; /* Centra el contenido */
+    gap: 30px; /* Espacio entre el H1 y el grid */
+}
+
+/* ESTILO CORREGIDO: 
+  Este es el H1 principal, centrado, fuera del grid 
+*/
+.panel-coordinador-titulo-principal {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 0; /* Quitamos margen por defecto */
+}
+
+.panel-coordinador-grid {
+    display: grid;
+    /* Define 3 columnas flexibles */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px; /* Ancho máximo del panel */
+}
+
+.panel-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ELIMINADO: 
+  Se quitó el estilo .panel-coordinador-titulo-columna 
+  ya que el H1 ahora es .panel-coordinador-titulo-principal
+*/
+
+.panel-titulo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.panel-icono {
+    font-size: 28px;
+    color: #005a9c; /* Azul primario */
+}
+
+.panel-titulo-wrapper h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+.panel-lista-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.panel-tarjeta-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.item-imagen {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ccc;
+    flex-shrink: 0;
+}
+
+.item-detalles {
+    flex-grow: 1;
+}
+
+.item-detalles p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.item-titulo {
+    font-weight: 700;
+    color: #000;
+    font-size: 16px !important;
+}
+
+.item-subtitulo {
+    color: #555;
+}
+
+.item-fecha {
+    color: #333;
+    font-weight: 500;
+}
+
+.item-icono-ver {
+    font-size: 28px;
+    color: #005a9c;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.panel-ver-mas {
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+    padding-top: 10px;
+}
+
+/* Columna 2: Reportes */
+.panel-tarjeta-reportes {
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.reporte-fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.reporte-fila:last-child {
+    border-bottom: none;
+}
+
+.reporte-fila.header {
+    font-weight: 700;
+    color: #000;
+    font-size: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+.panel-subtitulo-reportes {
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+    margin: 15px 0 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono-alerta {
+    font-size: 20px;
+    color: #DC3545; /* Rojo */
+}
+
+/* Para la tarjeta de pendientes con el icono de ojo */
+.panel-tarjeta-reportes.pendientes .reporte-fila {
+    grid-template-columns: 1fr 1fr 1fr auto;
+    align-items: center;
+}
+
+/* Columna 3: Estudiantes */
+.panel-formulario-busqueda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel-formulario-busqueda label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.panel-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.panel-input:focus {
+    outline: none;
+    border-color: #005a9c;
+    box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.2);
+}
+
+.boton-buscar-estudiante {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.boton-buscar-estudiante:hover {
+    background-color: #004a80;
+}
+
+.icono-lupa {
+    font-size: 20px;
+}
+
+/*pagina del coordinador busqueda de estudianteszzzzz*/
+
+.seccion-busqueda-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 30px; /* Espacio entre el título y la barra */
+}
+
+.titulo-busqueda-admin {
+    font-family: "Inter", sans-serif; 
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.contenedor-barra-busqueda-admin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px; /* Ancho de la barra de búsqueda */
+}
+
+.campo-busqueda-wrapper-admin {
+    position: relative; /* Para el icono de lupa */
+    flex-grow: 1; /* Ocupa el espacio */
+}
+
+.icono-lupa-busqueda-admin {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #555;
+    pointer-events: none; 
+}
+
+.campo-busqueda-admin {
+    width: 100%;
+    padding: 18px 25px 18px 60px; /* Padding izquierdo para el icono */
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    border: 2px solid #212529; /* Borde oscuro */
+    border-radius: 999px; /* Totalmente redondeado */
+    box-sizing: border-box; 
+    background-color: #ffffff;
+}
+
+.campo-busqueda-admin:focus {
+    outline: none;
+    border-color: #005a9c; /* Color primario de tu styleSheet */
+    box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.2);
+}
+
+.boton-filtros-admin {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+    border: none;
+    border-radius: 999px; /* Totalmente redondeado */
+    /* Hacemos que sea un círculo para el icono */
+    width: 58px; 
+    height: 58px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evita que se encoja */
+    transition: background-color 0.2s ease;
+}
+
+.boton-filtros-admin:hover {
+    background-color: #004a80; /* Tono más oscuro */
+}
+
+.icono-filtro-admin {
+    font-size: 24px;
+    color: white;
+}
+
+/* Contenedor para los resultados de abajo */
+.contenedor-resultados-admin {
+    width: 100%;
+    max-width: 1200px; /* Ancho más grande para la lista */
+    margin-top: 20px;
+    padding: 0 40px; /* Padding lateral */
+    box-sizing: border-box;
+}
+
+.titulo-resultados-admin {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 10px 0;
+}
+
+.subtitulo-resultados-admin {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}

@@ -1127,3 +1127,110 @@ justify-content: center;
     color: white;
     text-decoration: none;
 }
+
+.seccion-busqueda-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido */
+    width: 100%;
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    box-sizing: border-box;
+    gap: 35px; 
+}
+
+.titulo-busqueda {
+    font-family: "Inter", sans-serif; 
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.contenedor-barra-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.campo-busqueda-wrapper {
+    position: relative; 
+    flex-grow: 1; 
+}
+
+.icono-lupa-busqueda {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #555;
+    pointer-events: none; 
+}
+
+.campo-busqueda {
+    width: 100%;
+    padding: 18px 25px 18px 60px; 
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    border: 2px solid #212529; 
+    border-radius: 999px; 
+    box-sizing: border-box; 
+}
+
+.campo-busqueda:focus {
+    outline: none;
+    border-color: #005a9c; 
+    box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.2);
+}
+
+.boton-filtros {
+    background-color: #005a9c; 
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px; 
+    padding: 18px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.boton-filtros:hover {
+    background-color: #004a80; 
+}
+
+.icono-filtro {
+    font-size: 20px;
+    color: white;
+}
+
+.contenedor-tags-busqueda {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.tag-busqueda {
+    background-color: #ffc107; 
+    color: #333;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 999px; /* Totalmente redondeado */
+    transition: background-color 0.2s ease;
+}
+
+.tag-busqueda:hover {
+    background-color: #e0a800; 
+    color: #212529;
+}

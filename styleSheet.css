@@ -2300,3 +2300,715 @@ justify-content: center;
     color: #555;
     margin: 0;
 }
+
+/*aca va el de las verificaciones vacia*/
+.seccion-verificaciones-vacio {
+    width: 100%;
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra la sección */
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.titulo-verificaciones {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda-verificaciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.campo-busqueda-wrapper-verificaciones {
+    position: relative;
+    flex-grow: 1;
+}
+
+.icono-lupa-verificaciones {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #555;
+    pointer-events: none;
+}
+
+.campo-busqueda-verificaciones {
+    width: 100%;
+    padding: 16px 20px 16px 55px; /* Padding para el icono */
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.campo-busqueda-verificaciones:focus {
+    outline: none;
+    border-color: #005a9c;
+    box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.2);
+}
+
+.boton-filtros-verificaciones {
+    background-color: #eef5ff;
+    border: 1px solid #005a9c;
+    border-radius: 50%; /* Círculo */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-filtro-verificaciones {
+    font-size: 24px;
+    color: #005a9c;
+}
+
+/* Barra de acciones */
+.barra-acciones-verificaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-wrapper label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.botones-accion {
+    display: flex;
+    gap: 10px;
+}
+
+.boton-accion {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-accion.aceptar {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+}
+.boton-accion.aceptar:hover {
+    background-color: #004a80;
+}
+
+.boton-accion.rechazar {
+    background-color: #DC3545; /* Rojo */
+    color: white;
+}
+.boton-accion.rechazar:hover {
+    background-color: #c82333;
+}
+
+/* Contenido principal de paneles vacíos */
+.contenido-verificaciones-vacio {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Columna azul fija, gris flexible */
+    gap: 20px;
+    width: 100%;
+    /* Altura que resta quitando el nav y los elementos de arriba */
+    height: calc(100vh - 75px - 210px); 
+}
+
+.panel-vacio-mensajes {
+    background-color: #005a9c; /* Azul primario */
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.icono-mensaje-vacio {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.6); /* Icono blanco translúcido */
+}
+
+.panel-vacio-mensajes h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.panel-vacio-detalle {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.icono-detalle-vacio {
+    font-size: 120px;
+    color: #ced4da; /* Gris claro para el icono */
+}
+
+.panel-vacio-detalle h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.panel-vacio-detalle p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #6c757d; /* Gris secundario */
+    margin: 0;
+}
+
+/*aca va reportes-coordinador*/
+
+.seccion-reportes-coordinador {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.titulo-reportes-principal {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reportes-grid {
+    display: grid;
+    /* 3 columnas, la del medio es más ancha */
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.reportes-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reporte-titulo-columna {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 10px 0;
+}
+
+.reporte-tarjeta,
+.reporte-tarjeta-larga {
+    background-color: #ffffff;
+    border: 2px solid #212529;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reporte-tarjeta-larga {
+    height: 100%; /* Ocupa toda la altura de la columna */
+}
+
+/* Columna 1: Total Estudiantes */
+#total-estudiantes {
+    padding: 25px;
+}
+
+.total-estudiantes-numeros {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.total-estudiantes-activos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activos-label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.activos-numeros {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Columna 1: Verificados */
+.verificados-controles {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.boton-exportar,
+.verificados-controles select {
+    padding: 8px 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+}
+
+.boton-exportar {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono-calendario {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.lista-verificados {
+    padding: 10px;
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    flex-grow: 1; /* Ocupa espacio restante */
+}
+
+.lista-verificados p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+
+.lista-verificados ul {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lista-verificados li {
+    font-size: 14px;
+    color: #333;
+}
+
+.icono-ver-mas {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Columna 2: Lista de Reportes */
+.reporte-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.reporte-item:last-child {
+    border-bottom: none;
+}
+
+.reporte-info p {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.reporte-motivo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.reporte-nombre {
+    font-size: 14px;
+    color: #555;
+}
+
+.reporte-fecha {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    flex-shrink: 0; /* Evita que la fecha se rompa */
+    margin-left: 15px;
+}
+
+/* Columna 3: Reportes por Verificar */
+.reporte-verificar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.reporte-verificar-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.icono-alerta {
+    font-size: 22px;
+    color: #DC3545; /* Rojo */
+}
+
+.lista-reportes-verificar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-reportes-verificar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    padding: 12px 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.lista-reportes-verificar li:last-child {
+    border-bottom: none;
+}
+
+.icono-dropdown {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*ACA VA LAS VERIFICACIONES COORDINADOR*/
+.seccion-verificaciones-coordinador {
+    width: 100%;
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra la sección */
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.titulo-verificaciones-coord {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda-coord {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.campo-busqueda-wrapper-coord {
+    position: relative;
+    flex-grow: 1;
+}
+
+.icono-lupa-coord {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #555;
+    pointer-events: none;
+}
+
+.campo-busqueda-coord {
+    width: 100%;
+    padding: 16px 20px 16px 55px; /* Padding para el icono */
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.campo-busqueda-coord:focus {
+    outline: none;
+    border-color: #005a9c;
+    box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.2);
+}
+
+.boton-filtros-coord {
+    background-color: #eef5ff;
+    border: 1px solid #005a9c;
+    border-radius: 50%; /* Círculo */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-filtro-coord {
+    font-size: 24px;
+    color: #005a9c;
+}
+
+/* Barra de acciones */
+.barra-acciones-coord {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.checkbox-wrapper-coord {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-wrapper-coord label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+.checkbox-wrapper-coord input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.botones-accion-coord {
+    display: flex;
+    gap: 10px;
+}
+
+.boton-accion-coord {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-accion-coord.aceptar {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+}
+.boton-accion-coord.aceptar:hover {
+    background-color: #004a80;
+}
+
+.boton-accion-coord.rechazar {
+    background-color: #DC3545; /* Rojo */
+    color: white;
+}
+.boton-accion-coord.rechazar:hover {
+    background-color: #c82333;
+}
+
+/* Contenido principal de paneles */
+.contenido-verificaciones-coord {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Columna azul fija, gris flexible */
+    gap: 20px;
+    width: 100%;
+    /* Altura que resta quitando el nav y los elementos de arriba */
+    height: calc(100vh - 75px - 210px); 
+}
+
+/* Panel izquierdo (lista) */
+.panel-lista-correos {
+    background-color: #005a9c; /* Azul primario */
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto; /* Permite scroll en la lista */
+}
+
+.tarjeta-correo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.tarjeta-correo-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.correo-checkbox {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.correo-imagen {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee;
+    flex-shrink: 0;
+}
+
+.correo-detalles {
+    flex-grow: 1;
+    overflow: hidden; /* Evita que el texto se salga */
+}
+
+.correo-detalles p {
+    margin: 0;
+    white-space: nowrap; /* Evita que el texto salte de línea */
+    overflow: hidden;
+    text-overflow: ellipsis; /* ... si el texto es muy largo */
+}
+
+.correo-nombre {
+    font-size: 15px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.correo-universidad {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.correo-fecha {
+    font-size: 13px;
+    color: #6c757d;
+}
+
+/* Panel derecho (vacío) */
+.panel-detalle-vacio-coord {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.icono-detalle-vacio-coord {
+    font-size: 120px;
+    color: #ced4da; /* Gris claro para el icono */
+}
+
+.panel-detalle-vacio-coord h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.panel-detalle-vacio-coord p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #6c757d; /* Gris secundario */
+    margin: 0;
+}

@@ -3620,6 +3620,7 @@ justify-content: center;
 .info-personal p {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .descripcion p {

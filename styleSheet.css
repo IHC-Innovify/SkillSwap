@@ -3507,6 +3507,7 @@ justify-content: center;
 
 
 
+
 .perfil-usuario {
   font-family: Arial, sans-serif;
   max-width: 900px;
@@ -3613,9 +3614,31 @@ justify-content: center;
   gap: 20px;
 }
 
-.info-personal p,
+.info-personal p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .descripcion p {
-  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-editar {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #2196F3;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-editar:hover {
+  background-color: #e0f0ff;
 }
 
 .descripcion {
@@ -3676,40 +3699,5 @@ justify-content: center;
 
 .agregar {
   background-color: #d1ffd1;
-  cursor: pointer;
-}
-
-.ajustes {
-  text-align: right;
-}
-
-.btn-ajustes {
-  background-color: #2196F3;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* 📱 Responsive para móviles */
-@media screen and (max-width: 768px) {
-  .contenido-doble {
-    flex-direction: column;
-  }
-
-  .botones {
-    flex-direction: column;
-  }
-
-  .boton-toggle {
-    width: 100%;
-    text-align: center;
-  }
-
-  .temas-dominio ul,
-  .habilidades ul {
-    flex-direction: column;
-  }
-}
+  cursor: pointer
 

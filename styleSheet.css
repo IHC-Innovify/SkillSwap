@@ -3642,6 +3642,53 @@ justify-content: center;
   cursor: pointer;
 }
 
+/* 📱 Estilos responsivos para móviles */
+@media screen and (max-width: 600px) {
+  .perfil-usuario {
+    padding: 15px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .foto-perfil img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .btn-cambiar-foto {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+
+  .temas-dominio ul,
+  .habilidades ul {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .temas-dominio li,
+  .habilidades li {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .btn-ajustes {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .modo-tema {
+    justify-content: center;
+  }
+}
+
+
 
 
 /***************** UTILIDADES *****************/

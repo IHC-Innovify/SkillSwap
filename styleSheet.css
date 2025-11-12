@@ -4329,3 +4329,119 @@ justify-content: center;
 .dominio-select-box option:hover {
     background-color: #f0f2f5;
 }
+
+/*seccion nosotros*/
+
+.seccion-sobre-nosotros-principal {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Bloque de texto "Sobre nosotros" */
+.sobre-nosotros-texto-bloque {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.sobre-nosotros-texto-bloque h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.sobre-nosotros-texto-bloque p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Grid de Visión y Misión */
+.vision-mision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tarjeta-info-vm {
+    background-color: #005a9c; /* Azul primario */
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.tarjeta-info-vm h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.tarjeta-info-vm p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Sección de "El equipo" */
+.equipo-contenedor {
+    width: 100%;
+}
+
+.equipo-contenedor h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 25px 0;
+}
+
+.equipo-grid {
+    display: grid;
+    /* 6 columnas, se ajustarán en pantallas pequeñas */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center; /* Centra los items en el grid */
+}
+
+.equipo-miembro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.equipo-imagen-wrapper {
+    width: 120px;
+    height: 120px;
+}
+
+.equipo-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee; /* Placeholder */
+    border: 2px solid #005a9c; /* Borde azul */
+}
+
+.equipo-miembro span {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}

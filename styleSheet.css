@@ -3508,6 +3508,8 @@ justify-content: center;
 
 
 
+
+
 .perfil-usuario {
   font-family: Arial, sans-serif;
   max-width: 900px;
@@ -3584,9 +3586,11 @@ justify-content: center;
 }
 
 .foto-perfil img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 50%;
+  border: 3px solid #2196F3;
 }
 
 .btn-cambiar-foto {
@@ -3694,10 +3698,5 @@ justify-content: center;
   background-color: #e0e0e0;
   padding: 6px 12px;
   border-radius: 20px;
-  font-size: 14px;
-}
-
-.agregar {
-  background-color: #d1ffd1;
-  cursor: pointer
-
+  font-size: 
+    }

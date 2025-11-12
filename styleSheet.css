@@ -3505,9 +3505,11 @@ justify-content: center;
 
 
 
+
+
 .perfil-usuario {
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   background-color: #f4f4f4;
@@ -3573,7 +3575,7 @@ justify-content: center;
 .contenedor-perfil {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .foto-perfil {
@@ -3599,9 +3601,20 @@ justify-content: center;
   color: #ff9800;
 }
 
+.contenido-doble {
+  display: flex;
+  gap: 30px;
+}
+
+.columna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .info-personal p,
-.descripcion p,
-.estado p {
+.descripcion p {
   margin: 4px 0;
 }
 
@@ -3615,7 +3628,6 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 10px;
 }
 
 .grupo-botones label {
@@ -3681,34 +3693,13 @@ justify-content: center;
 }
 
 /* 📱 Responsive para móviles */
-@media screen and (max-width: 600px) {
-  .perfil-usuario {
-    padding: 15px;
+@media screen and (max-width: 768px) {
+  .contenido-doble {
+    flex-direction: column;
   }
 
-  .titulo {
-    font-size: 20px;
-  }
-
-  .foto-perfil img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .btn-cambiar-foto {
-    font-size: 11px;
-    padding: 4px 8px;
-  }
-
-  .rating {
-    font-size: 16px;
-  }
-
-  .temas-dominio ul,
-  .habilidades ul,
   .botones {
     flex-direction: column;
-    gap: 8px;
   }
 
   .boton-toggle {
@@ -3716,16 +3707,9 @@ justify-content: center;
     text-align: center;
   }
 
-  .btn-ajustes {
-    padding: 6px 10px;
-    font-size: 13px;
+  .temas-dominio ul,
+  .habilidades ul {
+    flex-direction: column;
   }
-
-  .modo-tema {
-
-
-
-
-/***************** UTILIDADES *****************/
-.perfil-usuario .pu-muted { color:#6b7280; }
+}
 

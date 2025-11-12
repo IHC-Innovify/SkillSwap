@@ -3501,64 +3501,147 @@ justify-content: center;
 
 
 
-/***************** CONTENEDOR *****************/
 .perfil-usuario {
-font-family: "Inter", sans-serif;
-color: #0f172a;
-background-color: #ffffff;
-border: 1px solid #e5e7eb;
-border-radius: 20px;
-padding: 28px;
-box-shadow: 0 10px 25px rgba(0,0,0,.06);
-max-width: 1100px;
-margin: 24px auto;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.modo-tema {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
 
-/***************** TOPBAR *****************/
-.perfil-usuario .pu-topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px; }
-.perfil-usuario .pu-toggle { display:flex; align-items:center; gap:10px; font-weight:600; }
-.perfil-usuario .pu-switch { width:56px; height:30px; background:#e5e7eb; border-radius:999px; position:relative; }
-.perfil-usuario .pu-switch::after { content:""; position:absolute; top:3px; left:3px; width:24px; height:24px; border-radius:50%; background:#fff; }
-.perfil-usuario .pu-gear { font-family:"Inter", sans-serif; font-size:15px; border:1px solid #e5e7eb; background:transparent; color:#0f172a; border-radius:8px; padding:10px 18px; cursor:pointer; transition:background-color .2s ease; }
-.perfil-usuario .pu-gear:hover { background:#f3f4f6; }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-/***************** LAYOUT *****************/
-.perfil-usuario .pu-grid { display:grid; grid-template-columns:310px 1fr; gap:28px; }
-@media (max-width:860px){ .perfil-usuario .pu-grid { grid-template-columns:1fr; } }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: .4s;
+}
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; width: 16px;
+  left: 2px; bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
 
-/***************** AVATAR *****************/
-.perfil-usuario .pu-avatar-card { display:flex; flex-direction:column; align-items:center; gap:14px; position:relative; z-index:1; }
-.perfil-usuario .pu-avatar-wrap { position:relative; }
-.perfil-usuario .pu-avatar { display:block; width:210px; height:210px; border-radius:50%; object-fit:cover; border:6px solid #e5e7eb; background:#f3f4f6; }
-.perfil-usuario .pu-badge { position:absolute; right:10px; bottom:10px; background:#2563eb; color:#fff; width:36px; height:36px; display:grid; place-items:center; border-radius:50%; border:3px solid #fff; }
-.perfil-usuario .pu-rating { display:flex; align-items:center; gap:8px; font-size:22px; font-weight:700; }
-.perfil-usuario .pu-star { color:#facc15; font-size:26px; }
-.perfil-usuario .pu-btn { font-family:"Inter", sans-serif; font-size:15px; font-weight:600; border:none; border-radius:8px; padding:12px 30px; cursor:pointer; transition:background-color .2s ease; background:#facc15; color:#111827; }
-.perfil-usuario .pu-btn:hover { background:#eab308; }
+.switch input:checked + .slider {
+  background-color: #2196F3;
+}
 
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
 
-/***************** DETALLES *****************/
-.perfil-usuario .pu-details { display:grid; gap:8px; }
-.perfil-usuario .pu-row { display:grid; grid-template-columns:150px 1fr auto; align-items:start; gap:8px; padding:10px 0; border-bottom:1px dashed #e5e7eb; }
-.perfil-usuario .pu-row:last-child { border-bottom:none; }
-.perfil-usuario .pu-label { color:#6b7280; font-weight:700; }
-.perfil-usuario .pu-edit { background:transparent; border:none; color:#6b7280; font-size:16px; cursor:pointer; transition:color .2s ease; }
-.perfil-usuario .pu-edit:hover { color:#111827; }
-.perfil-usuario .pu-desc { line-height:1.6; }
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
+.contenedor-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-/***************** CHIPS *****************/
-.perfil-usuario .pu-group-title { margin:14px 0 8px; font-weight:700; }
-.perfil-usuario .pu-chips { display:flex; flex-wrap:wrap; gap:10px; }
-.perfil-usuario .pu-chip { font-family:"Inter", sans-serif; font-size:14px; font-weight:600; padding:8px 16px; border-radius:50px; border:1px solid #e5e7eb; background:#f3f4f6; color:#111827; cursor:pointer; transition:background-color .2s ease, color .2s ease; }
-.perfil-usuario .pu-chip:hover { background:#e5e7eb; }
-.perfil-usuario .pu-chip.pu-on { background:#0ea5e9; color:#fff; border-color:#0ea5e9; }
-.perfil-usuario .pu-chip.pu-small { font-size:13px; padding:6px 12px; }
-.perfil-usuario .pu-chip.pu-add { font-weight:800; background:#facc15; color:#111827; border-color:#facc15; }
-.perfil-usuario .pu-chip.pu-add:hover { background:#eab308; }
+.foto-perfil {
+  text-align: center;
+}
+
+.foto-perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.btn-cambiar-foto {
+  margin-top: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.rating {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #ff9800;
+}
+
+.info-personal p,
+.descripcion p,
+.estado p {
+  margin: 4px 0;
+}
+
+.descripcion {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.temas-dominio ul,
+.habilidades ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.temas-dominio li,
+.habilidades li {
+  background-color: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.agregar {
+  background-color: #d1ffd1;
+  cursor: pointer;
+}
+
+.ajustes {
+  text-align: right;
+}
+
+.btn-ajustes {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 
 
 /***************** UTILIDADES *****************/

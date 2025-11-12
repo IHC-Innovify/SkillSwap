@@ -20,62 +20,32 @@
       <div class="menu-horizontal">
         <ul class="menu-horizontal-opciones">
           <li>
-            <a href="">Clientes</a>
-            <ul class="menu-vertical-lp">
-              <li><a href="index-user-estudiante.html">Estudiante</a></li>
-              <li><a href="index-user-coordinador.html">Coordinador</a></li>
-            </ul>
+            <a href="">Mis tutores</a>
           </li>
           <li>
-            <a href="">Sobre nosotros</a>
-            <ul class="menu-vertical-lp">
-              <li><a href="">Información</a></li>
-              <li><a href="">Visión</a></li>
-              <li><a href="">Misión</a></li>
-            </ul>
+            <a href="">Sesiones</a>
           </li>
+          <!--aca vamos a colocar un icono de lupa-->
           <li>
-            <a href="index-socios.html">Socios</a>
-            <ul class="menu-vertical-lp">
-              <li><a href="">Universidades</a></li>
-              <li><a href="">Afíliate</a></li>
-            </ul>
+            <span>
+              <img width="40px" height="40px" src="../imagenes/imagen-lupa.png" alt="Icono de lupa" class="icono-lupa"/>
+            </span>
           </li>
-           <li>
-            <a href=""> Contactenos</a>
-            <ul class="menu-vertical-lp-conts">
-              <li>
-                <a href="https://www.facebook.com">
-                  <img src="../imagenes/facebook-logo.png" alt="Logo de Facebook" class="conts-logos"/>
-                  <p>Facebook</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com">
-                  <img src="../imagenes/instagram-logo.png" alt="Logo de Instagram" class="conts-logos"/>
-                  <p>Instagram</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://wa.me/">
-                  <img src="../imagenes/whatsapp-logo.png" alt="Logo de WhatsApp" class="conts-logos"/>
-                  <p>WhatsApp</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://mail.google.com/">
-                  <img src="../imagenes/email-logo.png" alt="Logo de Email" class="conts-logos"/>
-                  <p>Email</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <button class="btn-iniciarsesion">Iniciar Sesion</button>
-          </li>
-          <li>
-            <button class="btn-registrase">Registrarse</button>
-          </li>
+           <!--aca vamos a agregar un icono de notificaciones-->
+            <li>
+                <span>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M11.5451 0C9.14713 0 6.84734 0.952601 5.1517 2.64824C3.45606 4.34388 2.50346 6.64367 2.50346 9.04167V13.5987C2.50365 13.799 2.45722 13.9967 2.36784 14.176L0.150044 18.6103C0.0417069 18.827 -0.00944872 19.0677 0.00143541 19.3097C0.0123195 19.5516 0.084882 19.7868 0.212231 19.9929C0.33958 20.1989 0.517487 20.369 0.729055 20.4869C0.940623 20.6048 1.17883 20.6667 1.42104 20.6667H21.6692C21.9114 20.6667 22.1496 20.6048 22.3612 20.4869C22.5728 20.369 22.7507 20.1989 22.878 19.9929C23.0054 19.7868 23.0779 19.5516 23.0888 19.3097C23.0997 19.0677 23.0485 18.827 22.9402 18.6103L20.7237 14.176C20.6339 13.9968 20.587 13.7991 20.5868 13.5987V9.04167C20.5868 6.64367 19.6342 4.34388 17.9385 2.64824C16.2429 0.952601 13.9431 0 11.5451 0ZM11.5451 24.5417C10.7435 24.5421 9.96138 24.2939 9.30669 23.8312C8.65201 23.3685 8.15694 22.7142 7.88971 21.9583H15.2005C14.9333 22.7142 14.4382 23.3685 13.7836 23.8312C13.1289 24.2939 12.3468 24.5421 11.5451 24.5417Z" fill="black"/>
+                    </svg>
+                </span>
+            </li>
+            <!--aca vamos a colocar la foto del perfil encerrado en un circulo-->
+            <li>
+                <div class="estudiante-foto-usuario-nav">
+                    <img src="../imagenes/ima-chica1.png" alt="Foto de perfil del estudiante" class="foto-usuario-nav"/>
+                </div>
+            </li>
+
         </ul>
       </div>
     </nav>
@@ -1173,6 +1143,7 @@ Aquí va el icono
 <div>
     <h2>Perfil del usuario</h2>
  </div>
+
 <section class="perfil-usuario">
     <div class="modo-tema">
       <label class="switch">
@@ -1272,6 +1243,101 @@ Aquí va el icono
     </div>
   </section>
 
+<div>
+    <br>
+    <h2>Añadir habilidades</h2>
+</div>
+
+<section class="seccion-perfil-habilidades">
+
+    <aside class="habilidades-perfil-sidebar">
+        <div class="habilidades-imagen-wrapper">
+            <img src="../imagenes/ima-chica1.png" alt="Foto de perfil" class="habilidades-imagen-perfil">
+            <span class="habilidades-verificado-badge">
+                
+<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.0149 2.32298C40.469 1.45071 39.6647 0.770343 38.714 0.376585C37.7633 -0.0171726 36.7135 -0.104731 35.7107 0.126101L28.5936 1.76089C27.8643 1.92853 27.1064 1.92853 26.377 1.76089L19.2599 0.126101C18.2571 -0.104731 17.2073 -0.0171726 16.2566 0.376585C15.3059 0.770343 14.5016 1.45071 13.9557 2.32298L10.0766 8.51381C9.68072 9.14714 9.14635 9.68152 8.51301 10.0813L2.32218 13.9605C1.45142 14.5059 0.772051 15.3089 0.378378 16.2579C-0.0152952 17.207 -0.103745 18.2551 0.125306 19.2567L1.7601 26.3817C1.92713 27.1098 1.92713 27.8663 1.7601 28.5944L0.125306 35.7155C-0.104635 36.7177 -0.0166305 37.7666 0.377085 38.7165C0.7708 39.6664 1.45067 40.47 2.32218 41.0157L8.51301 44.8949C9.14635 45.2907 9.68072 45.8251 10.0805 46.4584L13.9597 52.6492C15.0759 54.4344 17.2055 55.3171 19.2599 54.8461L26.377 53.2113C27.1064 53.0437 27.8643 53.0437 28.5936 53.2113L35.7147 54.8461C36.7169 55.076 37.7658 54.988 38.7157 54.5943C39.6656 54.2006 40.4692 53.5207 41.0149 52.6492L44.8941 46.4584C45.2899 45.8251 45.8243 45.2907 46.4576 44.8949L52.6524 41.0157C53.5239 40.4692 54.2035 39.6647 54.5965 38.7141C54.9896 37.7634 55.0765 36.7139 54.8453 35.7115L53.2145 28.5944C53.0468 27.8651 53.0468 27.1071 53.2145 26.3778L54.8493 19.2567C55.0796 18.2549 54.9922 17.2063 54.5992 16.2564C54.2062 15.3066 53.5271 14.5027 52.6563 13.9565L46.4616 10.0774C45.8291 9.68079 45.2946 9.14626 44.898 8.51381L41.0149 2.32298ZM39.0238 18.659C39.2687 18.2088 39.3293 17.6812 39.1931 17.1872C39.0568 16.6932 38.7342 16.2713 38.2932 16.0103C37.8522 15.7493 37.3271 15.6695 36.8285 15.7877C36.3299 15.906 35.8965 16.213 35.6197 16.6442L25.2686 34.1638L19.0184 28.1788C18.833 27.9884 18.6111 27.8373 18.3661 27.7345C18.121 27.6317 17.8577 27.5794 17.5919 27.5805C17.3262 27.5817 17.0634 27.6364 16.8192 27.7413C16.575 27.8462 16.3545 27.9992 16.1707 28.1912C15.987 28.3832 15.8438 28.6103 15.7497 28.8588C15.6556 29.1073 15.6125 29.3723 15.623 29.6379C15.6335 29.9034 15.6973 30.1641 15.8108 30.4045C15.9242 30.6448 16.0849 30.8598 16.2832 31.0367L24.3345 38.7515C24.55 38.9576 24.8092 39.1123 25.0929 39.2041C25.3765 39.2959 25.6773 39.3224 25.9726 39.2817C26.268 39.2409 26.5503 39.134 26.7985 38.9689C27.0467 38.8037 27.2545 38.5846 27.4061 38.328L39.0238 18.659Z" fill="#005A9C"/>
+</svg>
+
+
+            </span>
+        </div>
+        <button class="boton-cambiar-foto">Cambiar Foto</button>
+        <h3 class="habilidades-nombre-perfil">Alexandra Yamile Meza Soza</h3>
+    </aside>
+
+    <main class="habilidades-contenido-principal">
+        <h1 class="habilidades-titulo-principal">Añadir habilidades</h1>
+
+        <div class="habilidades-actuales-contenedor">
+            <h2>Habilidades actuales:</h2>
+            <div class="tags-actuales-wrapper">
+                <span class="habilidad-tag">Paciente</span>
+                <span class="habilidad-tag">Amable</span>
+                <span class="habilidad-tag">Activo</span>
+            </div>
+        </div>
+
+        <div class="habilidades-agregar-contenedor">
+            <h2>Habilidades a agregar:</h2>
+            <select name="habilidades" id="habilidades-select" multiple size="4" class="habilidades-select-box">
+                <option value="comunicacion">Comunicación</option>
+                <option value="liderazgo">Liderazgo</option>
+                <option value="puntualidad">Puntualidad</option>
+                <option value="empatia">Empatía</option>
+            </select>
+        </div>
+    </main>
+    
+</section>
+
+<div>
+    <br>
+    <h2>Añadir temas de dominio</h2>
+</div>
+
+<section class="seccion-perfil-dominio">
+
+    <aside class="dominio-perfil-sidebar">
+        <div class="dominio-imagen-wrapper">
+            <img src="../imagenes/ima-chica1.png" alt="Foto de perfil" class="dominio-imagen-perfil">
+            <span class="dominio-verificado-badge">
+                
+<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.0149 2.32298C40.469 1.45071 39.6647 0.770343 38.714 0.376585C37.7633 -0.0171726 36.7135 -0.104731 35.7107 0.126101L28.5936 1.76089C27.8643 1.92853 27.1064 1.92853 26.377 1.76089L19.2599 0.126101C18.2571 -0.104731 17.2073 -0.0171726 16.2566 0.376585C15.3059 0.770343 14.5016 1.45071 13.9557 2.32298L10.0766 8.51381C9.68072 9.14714 9.14635 9.68152 8.51301 10.0813L2.32218 13.9605C1.45142 14.5059 0.772051 15.3089 0.378378 16.2579C-0.0152952 17.207 -0.103745 18.2551 0.125306 19.2567L1.7601 26.3817C1.92713 27.1098 1.92713 27.8663 1.7601 28.5944L0.125306 35.7155C-0.104635 36.7177 -0.0166305 37.7666 0.377085 38.7165C0.7708 39.6664 1.45067 40.47 2.32218 41.0157L8.51301 44.8949C9.14635 45.2907 9.68072 45.8251 10.0805 46.4584L13.9597 52.6492C15.0759 54.4344 17.2055 55.3171 19.2599 54.8461L26.377 53.2113C27.1064 53.0437 27.8643 53.0437 28.5936 53.2113L35.7147 54.8461C36.7169 55.076 37.7658 54.988 38.7157 54.5943C39.6656 54.2006 40.4692 53.5207 41.0149 52.6492L44.8941 46.4584C45.2899 45.8251 45.8243 45.2907 46.4576 44.8949L52.6524 41.0157C53.5239 40.4692 54.2035 39.6647 54.5965 38.7141C54.9896 37.7634 55.0765 36.7139 54.8453 35.7115L53.2145 28.5944C53.0468 27.8651 53.0468 27.1071 53.2145 26.3778L54.8493 19.2567C55.0796 18.2549 54.9922 17.2063 54.5992 16.2564C54.2062 15.3066 53.5271 14.5027 52.6563 13.9565L46.4616 10.0774C45.8291 9.68079 45.2946 9.14626 44.898 8.51381L41.0149 2.32298ZM39.0238 18.659C39.2687 18.2088 39.3293 17.6812 39.1931 17.1872C39.0568 16.6932 38.7342 16.2713 38.2932 16.0103C37.8522 15.7493 37.3271 15.6695 36.8285 15.7877C36.3299 15.906 35.8965 16.213 35.6197 16.6442L25.2686 34.1638L19.0184 28.1788C18.833 27.9884 18.6111 27.8373 18.3661 27.7345C18.121 27.6317 17.8577 27.5794 17.5919 27.5805C17.3262 27.5817 17.0634 27.6364 16.8192 27.7413C16.575 27.8462 16.3545 27.9992 16.1707 28.1912C15.987 28.3832 15.8438 28.6103 15.7497 28.8588C15.6556 29.1073 15.6125 29.3723 15.623 29.6379C15.6335 29.9034 15.6973 30.1641 15.8108 30.4045C15.9242 30.6448 16.0849 30.8598 16.2832 31.0367L24.3345 38.7515C24.55 38.9576 24.8092 39.1123 25.0929 39.2041C25.3765 39.2959 25.6773 39.3224 25.9726 39.2817C26.268 39.2409 26.5503 39.134 26.7985 38.9689C27.0467 38.8037 27.2545 38.5846 27.4061 38.328L39.0238 18.659Z" fill="#005A9C"/>
+</svg>
+            </span>
+        </div>
+        <button class="boton-cambiar-foto-dominio">Cambiar Foto</button>
+        <h3 class="dominio-nombre-perfil">Alexandra Yamile Meza Soza</h3>
+    </aside>
+
+    <main class="dominio-contenido-principal">
+        <h1 class="dominio-titulo-principal">Añadir tema de dominio</h1>
+
+        <div class="dominio-actuales-contenedor">
+            <h2>Temas de dominio</h2>
+            <div class="tags-dominio-wrapper">
+                <span class="dominio-tag">Figma</span>
+                <span class="dominio-tag">Algoritmos</span>
+                <span class="dominio-tag">SQL</span>
+                <button class="dominio-tag-agregar" aria-label="Añadir nuevo tema">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <div class="dominio-agregar-contenedor">
+            <h2>Tema a agregar:</h2>
+            <select name="temas" id="temas-select" multiple size="4" class="dominio-select-box">
+                <option value="poo">POO</option>
+                <option value="ihc">IHC</option>
+                <option value="matematica">Matemática básica</option>
+            </select>
+        </div>
+    </main>
+    
+</section>
 
         <footer>
       <div class="seccion-footer">

@@ -1074,105 +1074,67 @@ Aquí va el icono
 
 
 <section class="perfil-usuario">
-<div class="pu-topbar">
-<div class="pu-toggle">
-<div class="pu-switch" aria-hidden="true"></div>
-<span class="pu-muted">Dark/Light</span>
-</div>
-<button class="pu-gear" aria-label="Ajustes" type="button">⚙️ Ajustes</button>
-</div>
+  <div class="modo-tema">
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+    <span>Dark/Light</span>
+  </div>
 
+  <h2 class="titulo">Perfil de Usuario</h2>
+  <div class="contenedor-perfil">
+    <div class="foto-perfil">
+      <img src="fox-avatar.png" alt="Foto de perfil">
+      <button class="btn-cambiar-foto">Cambiar Foto</button>
+      <div class="rating">⭐ 3.8</div>
+    </div>
 
-<div class="pu-grid">
-<!-- Columna izquierda -->
-<div class="pu-avatar-card">
-<div class="pu-rating"><span class="pu-star">★</span><span>3.8</span></div>
-<div class="pu-avatar-wrap">
-<!-- Reemplaza img/perfil.png por tu ruta -->
-<img class="pu-avatar" src="img/perfil.png" alt="Foto de perfil" />
-<div class="pu-badge" title="Verificado">✓</div>
-</div>
-<button class="pu-btn" type="button">Cambiar Foto</button>
-</div>
+    <div class="info-personal">
+      <p><strong>Nombre:</strong> Alexandra Yamile Meza Soza</p>
+      <p><strong>Universidad:</strong> Universidad Peruana de Ciencias Aplicadas</p>
+      <p><strong>Carrera:</strong> Ingeniería de Software</p>
+      <p><strong>Correo:</strong> u12345671bc@upc.edu.pe ✎</p>
+      <p><strong>Teléfono:</strong> 922 123 456 ✎</p>
+    </div>
 
+    <div class="descripcion">
+      <strong>Descripción:</strong>
+      <p>Hola!! Mi nombre es Alexandra y estoy aqui tanto para enseñar como para aprender, asi que si necesitas ayuda no dudes en contactarme y si me ayudarias con mis dudas t lo agradeceria bastante :D ✎</p>
+    </div>
 
-<!-- Columna derecha -->
-<div>
-<div class="pu-details">
-<div class="pu-row">
-<div class="pu-label">Nombre:</div>
-<div>Alexandra Yamile Meza Soza</div>
-<button class="pu-edit" type="button" title="Editar">✎</button>
-</div>
-<div class="pu-row">
-<div class="pu-label">Universidad:</div>
-<div>Universidad Peruana de Ciencias Aplicadas</div>
-<button class="pu-edit" type="button" title="Editar">✎</button>
-</div>
-<div class="pu-row">
-<div class="pu-label">Carrera:</div>
-<div>Ingeniería de Software</div>
-<button class="pu-edit" type="button" title="Editar">✎</button>
-</div>
-<div class="pu-row">
-<div class="pu-label">Correo:</div>
-<div>u12345671bc@upc.edu.pe</div>
-<button class="pu-edit" type="button" title="Editar">✎</button>
-</div>
-<div class="pu-row">
-<div class="pu-label">Teléfono:</div>
-<div>922 123 456</div>
-<button class="pu-edit" type="button" title="Editar">✎</button>
-</div>
-<div class="pu-row">
-<div class="pu-label">Descripción:</div>
-<div class="pu-desc">Hola!! Mi nombre es Alexandra y estoy aquí tanto para enseñar como para aprender, así que si necesitas ayuda no dudes en contactarme y si me ayudarías con mis dudas t lo agradecería bastante :D</div>
-<button class="pu-edit" type="button" title="Editar">✎</button>
-</div>
-</div>
+    <div class="estado">
+      <p><strong>Estado:</strong> Activo, Ocupado</p>
+      <p><strong>Días Disponibles:</strong> Lunes, Martes, Miércoles, Jueves, Viernes, Sábado</p>
+      <p><strong>Tipo de Usuario:</strong> Tutor, Estudiante, Ambos</p>
+    </div>
 
+    <div class="temas-dominio">
+      <strong>Temas de Dominio:</strong>
+      <ul>
+        <li>Figma</li>
+        <li>Algoritmos</li>
+        <li>SQL</li>
+        <li class="agregar">➕</li>
+      </ul>
+    </div>
 
-<div class="pu-group">
-<div class="pu-group-title">Estado:</div>
-<div class="pu-chips pu-single">
-<div class="pu-chip pu-on">Activo</div>
-<div class="pu-chip">Ocupado</div>
-</div>
-</div>
+    <div class="habilidades">
+      <strong>Habilidades:</strong>
+      <ul>
+        <li>Paciente ❌</li>
+        <li>Amable ❌</li>
+        <li>Activo ❌</li>
+        <li class="agregar">➕</li>
+      </ul>
+    </div>
 
-
-<div class="pu-group">
-<div class="pu-group-title">Días Disponibles:</div>
-<div class="pu-chips">
-<div class="pu-chip pu-on">Lunes</div>
-<div class="pu-chip">Martes</div>
-<div class="pu-chip pu-on">Miércoles</div>
-<div class="pu-chip">Jueves</div>
-<div class="pu-chip pu-on">Viernes</div>
-<div class="pu-chip">Sábado</div>
-</div>
-</div>
-
-
-<div class="pu-group">
-<div class="pu-group-title">Tipo de Usuario:</div>
-<div class="pu-chips pu-single">
-<div class="pu-chip">Tutor</div>
-<div class="pu-chip">Estudiante</div>
-<div class="pu-chip pu-on">Ambos</div>
-</div>
-</div>
-
-
-<div class="pu-group">
-<div class="pu-group-title">Temas de Dominio:</div>
-<div class="pu-chips">
-<div class="pu-chip pu-small pu-on">Figma</div>
-<div class="pu-chip pu-small pu-on">Algoritmos</div>
-<div class="pu-chip pu-small pu-on">SQL</div>
-<div class="pu-chip pu-small pu-add" title="Añadir">＋</div>
-</div>
+    <div class="ajustes">
+      <button class="btn-ajustes">⚙ Ajustes</button>
+    </div>
+  </div>
 </section>
+
 
 
 

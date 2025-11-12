@@ -3502,6 +3502,9 @@ justify-content: center;
 
 
 
+
+
+
 .perfil-usuario {
   font-family: Arial, sans-serif;
   max-width: 800px;
@@ -3631,8 +3634,8 @@ justify-content: center;
   padding: 8px 16px;
   border: none;
   border-radius: 20px;
-  background-color: #ccc;
-  color: #333;
+  background-color: #999;
+  color: white;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -3640,7 +3643,6 @@ justify-content: center;
 
 .boton-toggle.activo {
   background-color: #2196F3;
-  color: white;
 }
 
 .temas-dominio ul,
@@ -3715,7 +3717,11 @@ justify-content: center;
   }
 
   .btn-ajustes {
-    padding: 6px
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .modo-tema {
 
 
 

@@ -280,7 +280,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 0 50px;
-  
+}
+
+.socios-logos {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .socios-logos img{
@@ -349,6 +353,29 @@ body {
   padding: 20px 0;
   margin-top: 50px;   
 }
+
+/* seccion about the product */
+.seccion-atp {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;   
+}
+
+.div-video-atp {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.div-video-atp video {
+  width: 100%; /* ancho de la pantalla */
+  max-width: 60rem; /* ancho máximo de 500px */
+  justify-content: center;
+}
+
 /* aca va el cliente */
 .seccion-user-estudiante-aprendiz{
 padding-top: 90px;

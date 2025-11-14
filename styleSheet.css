@@ -12,7 +12,6 @@ body {
 }
 
 .barra-navegacion {
-  /*quiero que mi barra de navegacion se quede fija ahi*/
   display: flex;
   background-color: #ffffff;
   margin: 0;
@@ -28,17 +27,18 @@ body {
   z-index: 1000;
 }
 
-    .menu-horizontal-opciones {
-      list-style: none;
-      text-decoration: none;
-      display: flex;
-      justify-content: space-around;
-      color: black;
-      width: 100%;
-      padding: 0;
-      align-items: center;
-      gap: 20px;
-    }
+.menu-horizontal-opciones {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+  gap: 20px;
+}
+
 .menu-horizontal-opciones li a {
   list-style: none;
   text-decoration: none;
@@ -129,6 +129,7 @@ body {
   padding-top: 5px;
   align-items: center;
 }
+
 .logo img {
   width: 100%;
   max-width: 200px;

@@ -10,7 +10,7 @@ La página web de este repositorio está desplegada usando GitHub Pages y se pue
 
 https://IHC-Innovify.github.io/SkillSwap-LandingPage/
 
-(Este enlace se genera automáticamente a partir de la configuración de GitHub Pages de tu repositorio, como se describe en la sección 5.1.4 del documento del proyecto.)
+
 
  Contexto Académico
 

@@ -6,9 +6,57 @@
   box-sizing: border-box; /* ayuda a que los tamaños sean más predecibles */
   font-family: "Inter", sans-serif;
 }
+
+:root
+{
+    /*Variables de color*/
+    --background-color: #f7f9fc;
+    --primary-color: #193b69;
+    --secondary-color: #FFC107;
+    --border-color: #c7c6cd;
+    --white-color: #ffffff;
+
+    /*Variables de color de texto*/
+    --button-text-color: #ffff;
+    --placeholder-text-color: #c7c6cd;
+    --text-color: #000000;
+
+    /*Variables de tamanio del nav y foot*/
+    --nav-bar-height: 75px;
+    --footer-height: 58px;
+
+    /*Variables de texto (Tamaño, Peso y Interlineado)*/
+    --h1-font-size: 32px;
+    --h1-font-weight: bold;
+
+    --h2-font-size: 24px;
+    --h2-font-weight: 600;
+
+    --h3-font-size: 20px;
+    --h3-font-weight: 600;
+
+    --base-font-size: 16px;
+    --base-font-weight: 400;
+
+    --label-font-size: 14px;
+    --label-font-weight: 500;
+
+    --line-height: 1.5;
+}
+
 body {
     background-color: #f7f9fc; /* Un fondo gris muy claro */
     margin-top: 75px; /* Espacio para la barra de navegación fija */
+}
+
+.pantalla 
+{
+  display: none;
+}
+
+.pantalla.activa 
+{
+  display: block;
 }
 
 .barra-navegacion {
@@ -238,6 +286,59 @@ body {
   width: auto;
   height: auto;
   
+}
+
+.seccion-registro-cuenta, .seccion-inicio-sesion
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: calc(100vh - var(--footer-height));
+}
+
+.formulario-registro, .formulario-inicio-sesion
+{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.formulario-registro-elemento, .formulario-inicio-sesion-elemento
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.formulario-registro-elemento label, .formulario-inicio-sesion-elemento label
+{
+    font-weight: 500;
+    padding: 5px;
+    width: 100%;
+}
+
+.formulario-registro-elemento input, .formulario-inicio-sesion-elemento input
+{
+    border-radius: 9999px;
+    padding: 5px 10px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.formulario-registro-elemento input[type=submit], .formulario-inicio-sesion-elemento input[type=submit]
+{
+   background-color: var(--primary-color);
+   border: 0px;
+   color: var(--white-color);
+   cursor: pointer;
 }
 
 .seccion-footer {

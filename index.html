@@ -71,12 +71,12 @@
 
            -->
 
-          <li>
-            <button class="btn-iniciarsesion">Iniciar Sesion</button>
-          </li>
-          <li>
-            <button class="btn-registrase">Registrarse</button>
-          </li>
+            <li>
+              <button class="btn-iniciarsesion" onclick="mostrarSeccion('inicio-sesion')">Iniciar Sesion</button>
+            </li>
+            <li>
+              <button class="btn-registrase" onclick="mostrarSeccion('registro-cuenta')">Registrarse</button>
+            </li>
         </ul>
       </div>
     </nav>
@@ -165,6 +165,61 @@
     </div>
   </div>
 </section>
+    <section id="registro-cuenta" class="pantalla">
+        <div class="seccion-registro-cuenta">
+            <h1>Registrarse</h1>
+            <form class="formulario-registro">
+                <div class="formulario-registro-elemento">
+                    <label for="">Nombres*</label>
+                    <input type="text" name="nombre" placeholder="Ariana Marcela">
+                </div>
+                <div class="formulario-registro-elemento">
+                    <label for="">Apellidos*</label>
+                    <input type="text" name="apellido" placeholder="Garcia Vasquez">
+                </div>
+                <div class="formulario-registro-elemento">
+                    <label for="">Correo Institucional*</label>
+                    <input type="text" name="correo" placeholder="u20161u13b7@upc.edu.pe">
+                </div>
+                <div class="formulario-registro-elemento">
+                    <label for="">Contraseña*</label>
+                    <input type="text" name="contrasenia" placeholder="La contraseña debe tener un minimo de 8 caracteres">
+                </div>
+                <div class="formulario-registro-elemento">
+                    <input type="submit" value="Registrarse">
+                </div>
+            </form>
+            <label>Ya tienes cuenta? <a href="#" onclick="mostrarSeccion('inicio-sesion'); return false;">Entra Aqui</a></label>
+        </div>
+    </section>
+
+    <section id="inicio-sesion" class="pantalla">
+        <div class="seccion-inicio-sesion">
+            <h1>Inicio de Sesion</h1>
+            <form class="formulario-inicio-sesion">
+                <div class="formulario-inicio-sesion-elemento">
+                    <label for="">Correo Institucional*</label>
+                    <input type="text" name="correo" placeholder="u20161u13b7@upc.edu.pe">
+                </div>
+                <div class="formulario-inicio-sesion-elemento">
+                    <label for="">Contraseña*</label>
+                    <input type="text" name="contrasenia" placeholder="Contraseña">
+                </div>
+                <div class="formulario-inicio-sesion-elemento">
+                    <input type="submit" value="Iniciar Sesion">
+                </div>
+            </form>
+            <label>No tienes cuenta? <a href="#" onclick="mostrarSeccion('registro-cuenta'); return false;">Registrate</a></label>
+        </div>
+    </section>
+   
+    <script>
+    function mostrarSeccion(id) 
+    {
+      document.querySelectorAll('.pantalla').forEach(sec => sec.classList.remove('activa'));
+      document.getElementById(id).classList.add('activa');
+    }
+    </script>
     <!--seccion footer-->
     <footer>
       <div class="seccion-footer">

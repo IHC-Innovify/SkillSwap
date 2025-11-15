@@ -107,6 +107,7 @@ body {
   background-color: #005a9c;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 .btn-registrase {
@@ -116,6 +117,7 @@ body {
   background-color: #ffc107;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 .menu-vertical-lp {

@@ -4574,3 +4574,12 @@ justify-content: center;
     font-weight: 600;
     color: #333;
 }
+
+.terminos-condiciones {
+    text-decoration: none;
+    color: white;
+}
+
+.terminos-condiciones:hover {
+    text-decoration: underline;
+}

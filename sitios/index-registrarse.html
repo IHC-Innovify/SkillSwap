@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styleSheet.css" />
+    <title>SkillSwap</title>
+  </head>
+
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="barra-navegacion">
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/imagenes/SkillSwap_logo.png" alt="Logo de la aplicacion SkillSwap"
+          />
+        </a>
+      </div>
+
+      <div class="menu-horizontal">
+        <ul class="menu-horizontal-opciones">
+          <li><a href="../sitios/index-user-estudiante.html">Estudiantes</a></li>
+
+          <li><a href="../sitios/index-user-coordinador.html">Coordinador</a></li>
+
+          <li><a href="../sitios/index-sobre-nosotros.html">Sobre nosotros</a></li>
+
+          <li>
+              <a href="../sitios/index-login.html">
+              <button class="btn-iniciarsesion">Iniciar Sesion</button>
+              </a>
+            </li>
+
+           <li>
+              <a href="sitios\index-registrarse.html">
+              <button class="btn-registrase">Registrarse</button>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección de Registro -->
+    <section id="registro-cuenta" class="pantalla activa">
+      <div class="seccion-registro-cuenta">
+        <h1>Registrarse</h1>
+
+        <form class="formulario-registro">
+
+          <div class="formulario-registro-elemento">
+            <label>Nombres*</label>
+            <input type="text" name="nombre" placeholder="Ariana Marcela" />
+          </div>
+
+          <div class="formulario-registro-elemento">
+            <label>Apellidos*</label>
+            <input type="text" name="apellido" placeholder="Garcia Vasquez" />
+          </div>
+
+          <div class="formulario-registro-elemento">
+            <label>Correo Institucional*</label>
+            <input type="text" name="correo" placeholder="u20161u13b7@upc.edu.pe" />
+          </div>
+
+          <div class="formulario-registro-elemento">
+            <label>Contraseña*</label>
+            <input type="text" name="contrasenia"
+              placeholder="La contraseña debe tener un mínimo de 8 caracteres" />
+          </div>
+
+          <div class="formulario-registro-elemento">
+            <input type="submit" value="Registrarse" />
+          </div>
+
+        </form>
+
+        <label>
+            ¿Ya tienes cuenta?
+            <a href="../sitios/index-login.html">Entra Aquí</a>
+        </label>
+
+      </div>
+    </section>
+   
+    <!-- <script>
+      function mostrarSeccion(id) {
+        document.querySelectorAll('.pantalla')
+          .forEach(sec => sec.classList.remove('activa'));
+
+        document.getElementById(id).classList.add('activa');
+      }
+    </script> -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="seccion-footer">
+        <p>2025 SkillSwap. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

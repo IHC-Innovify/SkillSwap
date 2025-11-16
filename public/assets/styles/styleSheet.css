@@ -188,7 +188,7 @@ body {
 .seccion-llamado-accion {
   padding-top: 75px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(imagenes/imagen_banner.png);
+    url(../images/imagen_banner.png);
   background-size: cover;
   height: 100vh;
   display: flex;

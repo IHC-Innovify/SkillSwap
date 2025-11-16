@@ -11,7 +11,6 @@ La página web de este repositorio está desplegada usando GitHub Pages y se pue
 https://IHC-Innovify.github.io/SkillSwap-LandingPage/
 
 
-
  Contexto Académico
 
 Este proyecto fue desarrollado como parte del Trabajo Final (TB) para el curso IHC y Tecnologías Móviles (CC52) de la Universidad Peruana de Ciencias Aplicadas (UPC) durante el ciclo 2025-02.

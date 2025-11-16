@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleSheet.css" />
+    <link rel="stylesheet" href="assets/styles/styleSheet.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>SkillSwap</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div class="logo">
         <a href="index.html">
           <img
-          src="imagenes/SkillSwap_logo.png"
+          src="assets/images/SkillSwap_logo.png"
           alt="Logo de la aplicacion SkillSwap"
         />
         </a>
@@ -72,10 +73,14 @@
            -->
 
             <li>
-              <button class="btn-iniciarsesion" onclick="mostrarSeccion('inicio-sesion')">Iniciar Sesion</button>
+              <a href="sitios\index-login.html">
+              <button class="btn-iniciarsesion">Iniciar Sesion</button>
+              </a>
             </li>
             <li>
-              <button class="btn-registrase" onclick="mostrarSeccion('registro-cuenta')">Registrarse</button>
+              <a href="sitios\index-registrarse.html">
+              <button class="btn-registrase">Registrarse</button>
+              </a>
             </li>
         </ul>
       </div>
@@ -86,7 +91,9 @@
         ¡Únete a miles de estudiantes que comparten conocimiento en la red
         interuniversitaria más grande del Perú!
       </h2>
-      <button class="llamado-accion-boton">Unirse a la comunidad!</button>
+      <a href="sitios\index-registrarse.html">
+       <button class= "llamado-accion-boton">Unirse a la comunidad!</button>
+       </a>   
     </section>
     <!--seccion 2-->
     <section class="seccion-nosotros">
@@ -98,7 +105,7 @@
             <div class="division-nosotros-txt">
               <div class="elementos-nosotros-txt">
                     <div class="ns-icono">
-                        <img src="imagenes/imagen-lupa.png" alt="">
+                        <img src="assets/images/imagen-lupa.png" alt="">
                     </div>
                     <div class="ns-texto">
                         <h2>Busca habilidades</h2>
@@ -107,7 +114,7 @@
               </div>
               <div class="elementos-nosotros-txt">
                       <div class="ns-icono">
-                          <img src="imagenes/imagen-intercambio.png" alt="">
+                          <img src="assets/images/imagen-intercambio.png" alt="">
                       </div>
                       <div class="ns-texto">
                           <h2>Pide un intercambio</h2>
@@ -116,7 +123,7 @@
               </div>
               <div class="elementos-nosotros-txt">
                 <div class="ns-icono">
-                          <img src="imagenes/imagen-foco.png" alt="">
+                          <img src="assets/images/imagen-foco.png" alt="">
                       </div>
                       <div class="ns-texto">
                         <h2>Aprende y crece</h2>
@@ -126,7 +133,7 @@
               <button class="llamado-accion-boton2">Empezar a aprender</button>
             </div>
             <div class="division-nosotros-ima">
-              <img src="imagenes/imagen-derecha-seccion.png" alt="Imagen referencial de las pantallas en la plataforma">
+              <img src="assets/images/imagen-derecha-seccion.png" alt="Imagen referencial de las pantallas en la plataforma">
            
             </div>
         </div>
@@ -138,7 +145,7 @@
           <h1>Socios-Universidades Afiliadas</h1>
       </div>
       <div class="socios-logos">
-        <img src="imagenes/logos-universidades.png">
+        <img src="assets/images/logos-universidades.png">
       </div>
     </section>
 
@@ -148,7 +155,7 @@
         <h1>Conoce más de SkillSwap</h1>
       </div>
       <div class="div-video-atp">
-        <video src="videos/video-atp.mp4" controls></video>
+        <video src="assets/videos/video-atp.mp4" controls></video>
       </div>
     </section>
 
@@ -175,65 +182,19 @@
     </div>
   </div>
 </section>
-    <section id="registro-cuenta" class="pantalla">
-        <div class="seccion-registro-cuenta">
-            <h1>Registrarse</h1>
-            <form class="formulario-registro">
-                <div class="formulario-registro-elemento">
-                    <label for="">Nombres*</label>
-                    <input type="text" name="nombre" placeholder="Ariana Marcela">
-                </div>
-                <div class="formulario-registro-elemento">
-                    <label for="">Apellidos*</label>
-                    <input type="text" name="apellido" placeholder="Garcia Vasquez">
-                </div>
-                <div class="formulario-registro-elemento">
-                    <label for="">Correo Institucional*</label>
-                    <input type="text" name="correo" placeholder="u20161u13b7@upc.edu.pe">
-                </div>
-                <div class="formulario-registro-elemento">
-                    <label for="">Contraseña*</label>
-                    <input type="text" name="contrasenia" placeholder="La contraseña debe tener un minimo de 8 caracteres">
-                </div>
-                <div class="formulario-registro-elemento">
-                    <input type="submit" value="Registrarse">
-                </div>
-            </form>
-            <label>Ya tienes cuenta? <a href="#" onclick="mostrarSeccion('inicio-sesion'); return false;">Entra Aqui</a></label>
-        </div>
-    </section>
-
-    <section id="inicio-sesion" class="pantalla">
-        <div class="seccion-inicio-sesion">
-            <h1>Inicio de Sesion</h1>
-            <form class="formulario-inicio-sesion">
-                <div class="formulario-inicio-sesion-elemento">
-                    <label for="">Correo Institucional*</label>
-                    <input type="text" name="correo" placeholder="u20161u13b7@upc.edu.pe">
-                </div>
-                <div class="formulario-inicio-sesion-elemento">
-                    <label for="">Contraseña*</label>
-                    <input type="text" name="contrasenia" placeholder="Contraseña">
-                </div>
-                <div class="formulario-inicio-sesion-elemento">
-                    <input type="submit" value="Iniciar Sesion">
-                </div>
-            </form>
-            <label>No tienes cuenta? <a href="#" onclick="mostrarSeccion('registro-cuenta'); return false;">Registrate</a></label>
-        </div>
-    </section>
+    <!--script de cambio de secciones-->
    
-    <script>
+    <!-- <script>
     function mostrarSeccion(id) 
     {
       document.querySelectorAll('.pantalla').forEach(sec => sec.classList.remove('activa'));
       document.getElementById(id).classList.add('activa');
     }
-    </script>
+    </script> -->
     <!--seccion footer-->
     <footer>
       <div class="seccion-footer">
-        <p>2025 SkillSwap. Todos los derechos reservados. <a href="archivos/TerminosCondiciones.pdf" class="terminos-condiciones">Terminos y Condiciones</a> </p>
+        <p>2025 SkillSwap. Todos los derechos reservados. <a href="../archivos/TerminosCondiciones.pdf" class="terminos-condiciones">Terminos y Condiciones</a> </p>
       </div>
     </footer>
   </body>

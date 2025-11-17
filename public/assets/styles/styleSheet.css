@@ -4683,7 +4683,7 @@ justify-content: center;
 
 .equipo-miembro:hover {
   transform: scale(1.05); /* Agranda la tarjeta */
-  box-shadow: 0 8px 25px rgba(25, 59, 105, 0.15); /* Sombra */
+  box-shadow: 0 8px 25px rgba(25, 59, 105, 0.15);/* Sombra */
 }
 
 

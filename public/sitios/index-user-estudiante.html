@@ -21,16 +21,16 @@
       <div class="menu-horizontal">
         <ul class="menu-horizontal-opciones">
           <li>
-            <a href="">Mis tutores</a>
+            <a href="#" id="nav-mis-tutores">Mis tutores</a>
           </li>
           <li>
-            <a href="">Sesiones</a>
+            <a href="#" id="nav-sesiones">Sesiones</a>
           </li>
           <!--aca vamos a colocar un icono de lupa-->
           <li>
-            <span>
+            <a href="#" id="nav-buscar" title="Buscar">
               <img width="40px" height="40px" src="../assets/images/imagen-lupa.png" alt="Icono de lupa" class="icono-lupa"/>
-            </span>
+            </a>
           </li>
            <!--aca vamos a agregar un icono de notificaciones-->
             <li>
@@ -42,9 +42,11 @@
             </li>
             <!--aca vamos a colocar la foto del perfil encerrado en un circulo-->
             <li>
-                <div class="estudiante-foto-usuario-nav">
-                    <img src="../assets/images/ima-chica1.png" alt="Foto de perfil del estudiante" class="foto-usuario-nav"/>
-                </div>
+                <a href="#" id="nav-perfil" title="Ver Perfil">
+                  <div class="estudiante-foto-usuario-nav">
+                      <img src="../assets/images/ima-chica1.png" alt="Foto de perfil del estudiante" class="foto-usuario-nav"/>
+                  </div>
+                </a>
             </li>
 
         </ul>
@@ -1338,6 +1340,109 @@ Aquí va el icono
         </div>
     </main>
     
+</section>
+
+<section class="dashboard-principal-estudiante panel-seccion activa" id="panel-dashboard-estudiante">
+
+  <div class="dash-est-header">
+    <h1 class="dash-est-titulo">¡Bienvenida de nuevo Alexandra!</h1>
+    <a href="#" id="nav-aprender" class="dash-est-boton-aprender">Aprender un nuevo tema</a>
+  </div>
+
+  <div class="dash-est-grid">
+    
+    <div class="dash-est-columna-izquierda">
+      <h2 class="dash-est-subtitulo">Sesiones programadas</h2>
+      
+      <div class="dash-est-tarjeta-sesion">
+        <div class="dash-est-tarjeta-header">
+          <h3>Calculo II</h3>
+          <span class="tag-sesion confirmada">Confirmada</span>
+        </div>
+        <div class="dash-est-tarjeta-body">
+          <p><strong>Tutor:</strong> Alexandra Meza (Tu)</p>
+          <p><strong>Estudiante:</strong> Adrian Guevara</p>
+          <p><strong>Fecha:</strong> 02/11/2025</p>
+          <p><strong>Hora:</strong> 4:00 pm</p>
+        </div>
+        <button class="dash-est-boton-detalle">Ver detalles</button>
+      </div>
+      
+      <div class="dash-est-tarjeta-sesion">
+        <div class="dash-est-tarjeta-header">
+          <h3>Algoritmos</h3>
+           <span class="tag-sesion pendiente">Pendiente</span>
+        </div>
+        <div class="dash-est-tarjeta-body">
+          <p><strong>Tutor:</strong> Alexandra Meza (Tu)</p>
+          <p><strong>Estudiante:</strong> Carmen Mendoza</p>
+          <p><strong>Fecha:</strong> 10/11/2025</p>
+          <p><strong>Hora:</strong> 3:00 pm</p>
+        </div>
+        <button class="dash-est-boton-detalle">Ver detalles</button>
+      </div>
+
+      <button class="dash-est-boton-calendario">Abrir Calendario</button>
+    </div>
+
+    <div class="dash-est-columna-derecha">
+      
+      <div class="dash-est-sub-seccion">
+        <div class="dash-est-sub-header">
+          <h2 class="dash-est-subtitulo">Solicitudes</h2>
+          <a href="#" class="dash-est-ver-todas">Ver todas</a>
+        </div>
+        <span class="dash-est-subtitulo-info">¡Tienes 3 solicitudes pendientes!</span>
+        
+        <div class="dash-est-tarjeta-solicitud">
+          <img src="../assets/images/ima-foto-adrian-guevara.png" alt="Foto Jose Alvarado" class="dash-est-solicitud-img">
+          <div class="dash-est-solicitud-info">
+            <p><strong>Jose Alvarado Jimenez</strong></p>
+            <p>Hola! Podemos programar una sesion para el martes? :)</p>
+          </div>
+          <div class="dash-est-solicitud-acciones">
+            <button class="dash-est-accion-btn aceptar" aria-label="Aceptar">&#x2713;</button>
+            <button class="dash-est-accion-btn rechazar" aria-label="Rechazar">&#x2715;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-est-sub-seccion">
+        <div class="dash-est-sub-header">
+          <h2 class="dash-est-subtitulo">Mis tutores en linea</h2>
+        </div>
+
+        <div class="dash-est-tarjeta-tutor">
+          <div class="dash-est-tutor-img-wrapper">
+            <img src="../assets/images/ima-chico1.png" alt="Foto Miguel Santos" class="dash-est-tutor-img">
+            <span class="dash-est-online-indicator"></span>
+          </div>
+          <div class="dash-est-tutor-info">
+            <p><strong>Miguel Santos Medina</strong> <span class="dash-est-verificado-check">✓</span></p>
+            <p>Ing. Software - PUCP</p>
+            <button class="dash-est-boton-programar">Programar sesion</button>
+          </div>
+          <span class="dash-est-tutor-fav activo">❤</span>
+        </div>
+
+        <div class="dash-est-tarjeta-tutor">
+          <div class="dash-est-tutor-img-wrapper">
+            <img src="../assets/images/ima-foto-adrian-guevara.png" alt="Foto Adrian Guevara" class="dash-est-tutor-img">
+            <span class="dash-est-online-indicator"></span>
+          </div>
+          <div class="dash-est-tutor-info">
+            <p><strong>Adrian Guevara Romero</strong> <span class="dash-est-verificado-check">✓</span></p>
+            <p>Ing. Sistemas - Ulima</p>
+            <button class="dash-est-boton-programar">Programar sesion</button>
+          </div>
+          <span class="dash-est-tutor-fav activo">❤</span>
+        </div>
+        
+        <button class="dash-est-boton-ver-tutores">Ver todos mis tutores</button>
+      </div>
+
+    </div>
+  </div>
 </section>
 
         <footer>

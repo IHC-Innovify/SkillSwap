@@ -4685,3 +4685,21 @@ justify-content: center;
   transform: scale(1.05); /* Agranda la tarjeta */
   box-shadow: 0 8px 25px rgba(25, 59, 105, 0.15); /* Sombra */
 }
+
+
+/* --- Estilos para el panel de coordinador --- */
+
+.panel-seccion {
+  display: none; 
+}
+
+
+.panel-seccion.activa {
+  display: block;
+}
+
+
+.panel-coordinador-seccion.panel-seccion.activa,
+.seccion-busqueda-admin.panel-seccion.activa {
+  display: flex;
+}

@@ -4585,3 +4585,121 @@ justify-content: center;
 .terminos-condiciones:hover {
     text-decoration: underline;
 }
+
+/*NUEVOS ESTILOS RECIENTES*/
+
+
+.btn-iniciarsesion,
+.btn-registrase,
+.llamado-accion-boton,
+.llamado-accion-boton2,
+.contact-button {
+  /* Añadimos una transición suave para los efectos */
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-iniciarsesion:hover,
+.btn-registrase:hover,
+.llamado-accion-boton:hover,
+.llamado-accion-boton2:hover,
+.contact-button:hover {
+  transform: scale(1.05); /* Zoom botón ligeramente */
+  filter: brightness(110%); /* el brillo */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra sutil */
+}
+
+.elementos-nosotros-txt {
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elementos-nosotros-txt:hover {
+  transform: translateY(-5px); /* Eleva tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Añade sombra */
+}
+
+.division-nosotros-ima img {
+  transition: transform 0.3s ease-out;
+  border-radius: 8px; /* Para que las esquinas se vean suaves al crecer */
+}
+
+.division-nosotros-ima img:hover {
+  transform: scale(1.03); /* Agranda la imagen un 3% */
+}
+
+.socios-logos img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.socios-logos img:hover {
+  transform: scale(1.1); /* Agranda el logo  */
+  opacity: 0.7; /* efecto de "iluminado" */
+}
+
+.div-video-atp video {
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px; /* sombra */
+}
+
+.div-video-atp video:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra */
+}
+
+/*ACA SECCIONES PARA NOSOTROS*/
+
+
+
+.sobre-nosotros-texto-bloque {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-nosotros-texto-bloque:hover {
+  transform: translateY(-5px); /* bloque */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* 2. Tarjetas de Visión y Misión */
+.tarjeta-info-vm {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-info-vm:hover {
+  transform: translateY(-8px); /* Eleva la tarjeta */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+.equipo-miembro {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.equipo-miembro:hover {
+  transform: scale(1.05); /* Agranda la tarjeta */
+  box-shadow: 0 8px 25px rgba(25, 59, 105, 0.15); /* Sombra */
+}
+
+
+/* --- Estilos para el panel de coordinador --- */
+
+.panel-seccion {
+  display: none; 
+}
+
+
+.panel-seccion.activa {
+  display: block;
+}
+
+
+.panel-coordinador-seccion.panel-seccion.activa,
+.seccion-busqueda-admin.panel-seccion.activa {
+  display: flex;
+}

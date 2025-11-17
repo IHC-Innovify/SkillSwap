@@ -4703,3 +4703,317 @@ justify-content: center;
 .seccion-busqueda-admin.panel-seccion.activa {
   display: flex;
 }
+
+
+/* --- Estilos para el Dashboard de Estudiante --- */
+.dashboard-principal-estudiante {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.dash-est-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dash-est-titulo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+.dash-est-boton-aprender {
+    background-color: var(--secondary-color); /* #ffc107 */
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.dash-est-boton-aprender:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+.dash-est-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 30px;
+}
+
+.dash-est-columna-izquierda,
+.dash-est-columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dash-est-subtitulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+/* Tarjetas de Sesión */
+.dash-est-tarjeta-sesion {
+    background-color: var(--white-color); /* #ffffff */
+    border: 1px solid var(--border-color); /* #c7c6cd */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dash-est-tarjeta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.dash-est-tarjeta-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+/* Reutilizando tus clases de tags */
+.tag-sesion {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    color: #212529;
+}
+
+.tag-sesion.pendiente {
+    background-color: var(--secondary-color); /* #ffc107 */
+}
+
+.tag-sesion.confirmada {
+    background-color: #28a745; 
+    color: white;
+}
+
+.dash-est-tarjeta-body p {
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.dash-est-tarjeta-body strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.dash-est-boton-detalle,
+.dash-est-boton-calendario,
+.dash-est-boton-ver-tutores {
+    background-color: #005a9c; /* Azul (de tu CSS) */
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.dash-est-boton-detalle:hover,
+.dash-est-boton-calendario:hover,
+.dash-est-boton-ver-tutores:hover {
+    background-color: #004a80; /* Azul más oscuro */
+}
+
+/* Columna Derecha */
+.dash-est-sub-seccion {
+    background-color: var(--background-color); /* #f7f9fc */
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dash-est-sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-est-sub-header .dash-est-subtitulo {
+    font-size: 22px; /* Más pequeño que el título de columna */
+}
+
+.dash-est-ver-todas {
+    font-size: 14px;
+    font-weight: 600;
+    color: #005a9c;
+    text-decoration: none;
+}
+.dash-est-ver-todas:hover {
+    text-decoration: underline;
+}
+
+.dash-est-subtitulo-info {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-top: -10px; /* Acercarlo al título */
+}
+
+/* Tarjeta de Solicitud */
+.dash-est-tarjeta-solicitud {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dash-est-solicitud-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.dash-est-solicitud-info {
+    flex-grow: 1;
+}
+
+.dash-est-solicitud-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.dash-est-solicitud-info p strong {
+    font-size: 15px;
+    color: #000;
+}
+
+.dash-est-solicitud-acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.dash-est-accion-btn {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+}
+.dash-est-accion-btn.aceptar {
+    background-color: #28a745;
+    color: white;
+}
+.dash-est-accion-btn.rechazar {
+    background-color: #DC3545;
+    color: white;
+}
+
+/* Tarjeta de Tutor en Línea */
+.dash-est-tarjeta-tutor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.dash-est-tutor-img-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.dash-est-tutor-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dash-est-online-indicator {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: #28a745;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.dash-est-tutor-info {
+    flex-grow: 1;
+}
+.dash-est-tutor-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+.dash-est-tutor-info p strong {
+    font-size: 16px;
+    color: #000;
+}
+
+.dash-est-verificado-check {
+    color: #005a9c;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.dash-est-boton-programar {
+    background-color: var(--secondary-color);
+    color: #212529;
+    border: none;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.dash-est-tutor-fav {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+.dash-est-tutor-fav.activo {
+    color: #DC3545; /* Rojo */
+}

@@ -5256,3 +5256,260 @@ body.dark-mode .descripcion p.editable-field-active {
   background-color: rgba(138, 180, 248, 0.1);
   outline-color: #8ab4f8;
 }
+
+
+/* --- (NUEVO) Estilos para la Sección de Ajustes --- */
+
+/* Contenedor principal que divide en 2 columnas */
+.ajustes-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar 250px, resto para contenido */
+    min-height: 600px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Sidebar (Menú lateral) */
+.ajustes-sidebar, .ajustes-sidebar-chat {
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+    border-right: 1px solid var(--border-color);
+}
+
+.ajustes-titulo-menu {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ajustes-lista-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.ajustes-lista-menu li {
+    margin-bottom: 10px;
+}
+
+.ajustes-link, .ajustes-link-chat {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.ajustes-link:hover, .ajustes-link-chat:hover {
+    background-color: #e9ecef;
+}
+
+/* Estado activo (link seleccionado) */
+.ajustes-link.activo, .ajustes-link-chat.activo {
+    background-color: #e3f2fd; /* Azul muy claro */
+    color: #005a9c;
+    font-weight: 700;
+}
+
+.ajustes-link.volver {
+    color: #dc3545;
+    margin-top: 20px;
+}
+
+.ajustes-separador {
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+/* Área de Contenido */
+.ajustes-contenido {
+    padding: 40px;
+}
+
+.ajustes-contenido h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.ajustes-opcion-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-opcion h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+.info-opcion p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.select-ajustes {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.boton-chat-guardar {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #005a9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* --- (NUEVO) Estilos Temas de Color --- */
+
+/* Contenedor de los botones circulares */
+.temas-colores-grid {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botón circular genérico */
+.btn-color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.btn-color:hover {
+    transform: scale(1.1);
+}
+.btn-color.selected {
+    border-color: #333; /* Borde oscuro para indicar selección */
+}
+body.dark-mode .btn-color.selected {
+    border-color: #fff; /* Borde blanco en modo oscuro */
+}
+
+/* Colores específicos de los botones */
+.btn-color.theme-default { background-color: #005a9c; } /* Azul original */
+.btn-color.theme-pink { background-color: #e83e8c; }    /* Pink */
+.btn-color.theme-lightblue { background-color: #17a2b8; } /* Celestito */
+.btn-color.theme-orange { background-color: #fd7e14; }  /* Naranja */
+
+/* --- VARIABLES DE TEMA --- */
+/* Sobrescribimos --primary-color y --secondary-color según la clase del body */
+
+body.theme-pink {
+    --primary-color: #e83e8c;
+    --secondary-color: #f8d7da; 
+}
+/* Aplicar cambio a elementos que no usan variables aun */
+body.theme-pink .btn-iniciarsesion, 
+body.theme-pink .dash-est-boton-detalle,
+body.theme-pink .boton-chat-guardar,
+body.theme-pink .btn-add-reply,
+body.theme-pink .ajustes-link.activo {
+    background-color: #e83e8c !important;
+}
+body.theme-pink .ajustes-link.activo {
+    color: #e83e8c !important;
+    background-color: #fce4ec !important; /* Fondo suave pink */
+}
+
+body.theme-lightblue {
+    --primary-color: #17a2b8;
+    --secondary-color: #d1ecf1;
+}
+body.theme-lightblue .btn-iniciarsesion, 
+body.theme-lightblue .dash-est-boton-detalle,
+body.theme-lightblue .boton-chat-guardar,
+body.theme-lightblue .btn-add-reply,
+body.theme-lightblue .ajustes-link.activo {
+    background-color: #17a2b8 !important;
+}
+body.theme-lightblue .ajustes-link.activo {
+    color: #17a2b8 !important;
+    background-color: #e0f7fa !important;
+}
+
+body.theme-orange {
+    --primary-color: #fd7e14;
+    --secondary-color: #ffeeba;
+}
+body.theme-orange .btn-iniciarsesion, 
+body.theme-orange .dash-est-boton-detalle,
+body.theme-orange .boton-chat-guardar,
+body.theme-orange .btn-add-reply,
+body.theme-orange .ajustes-link.activo {
+    background-color: #fd7e14 !important;
+}
+body.theme-orange .ajustes-link.activo {
+    color: #fd7e14 !important;
+    background-color: #fff3e0 !important;
+}
+
+
+/* --- (NUEVO) Estilos Respuestas Rápidas --- */
+.quick-reply-input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input-quick-reply {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.btn-add-reply {
+    padding: 0 20px;
+    background-color: var(--primary-color, #005a9c);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lista-respuestas-rapidas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-respuestas-rapidas li {
+    background-color: var(--background-color);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+}
+
+.btn-delete-reply {
+    cursor: pointer;
+    color: #dc3545;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 18px;
+}
+.btn-delete-reply:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 50%;
+}

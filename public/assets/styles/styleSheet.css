@@ -5017,3 +5017,242 @@ justify-content: center;
 .dash-est-tutor-fav.activo {
     color: #DC3545; /* Rojo */
 }
+
+/* ---Estilos para Dark Mode --- */
+
+/*Redefinimos las variables globales cuando 'dark-mode' está activo */
+body.dark-mode {
+  --background-color: #121212; /* Fondo principal casi negro */
+  --primary-color: #2a5a9e;    /* Azul primario más brillante */
+  --border-color: #3a3a3a;      /* Bordes más oscuros */
+  --white-color: #1e1e1e;       /* Fondo de tarjetas y paneles */
+  --text-color: #e0e0e0;       /* Color de texto principal */
+  --placeholder-text-color: #888888;
+}
+
+/* Ajustes específicos para elementos que no usan variables */
+
+/* Títulos y texto fuerte */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode strong,
+body.dark-mode .menu-horizontal-opciones li a,
+body.dark-mode .panel-coordinador-titulo-principal,
+body.dark-mode .panel-titulo-wrapper h2,
+body.dark-mode .item-titulo,
+body.dark-mode .reporte-fila.header,
+body.dark-mode .panel-subtitulo-reportes,
+body.dark-mode .reporte-motivo,
+body.dark-mode .reporte-fecha,
+body.dark-mode .reporte-verificar-header h3,
+body.dark-mode .correo-nombre,
+body.dark-mode .panel-detalle-vacio-coord h2,
+body.dark-mode .titulo-busqueda-admin,
+body.dark-mode .titulo-resultados-admin,
+body.dark-mode .titulo-verificaciones,
+body.dark-mode .titulo-verificaciones-coord,
+body.dark-mode .titulo-reportes-principal,
+body.dark-mode .reporte-titulo-columna,
+body.dark-mode .total-estudiantes-numeros,
+body.dark-mode .activos-label,
+body.dark-mode .activos-numeros,
+body.dark-mode .lista-verificados p,
+body.dark-mode .perfil-nombre-grande,
+body.dark-mode .tutor-nombre,
+body.dark-mode .rating-numero,
+body.dark-mode .titulo-calificacion,
+body.dark-mode .nombre-calificar,
+body.dark-mode .titulo-busqueda,
+body.dark-mode .titulo-sesiones,
+body.dark-mode .subtitulo-sesiones,
+body.dark-mode .sesion-nombre-tutor,
+body.dark-mode .perfil-usuario .titulo,
+body.dark-mode .info-personal p,
+body.dark-mode .descripcion strong,
+body.dark-mode .grupo-botones label,
+body.dark-mode .temas-dominio strong,
+body.dark-mode .habilidades strong,
+body.dark-mode .habilidades-nombre-perfil,
+body.dark-mode .habilidades-titulo-principal,
+body.dark-mode .habilidades-actuales-contenedor h2,
+body.dark-mode .habilidades-agregar-contenedor h2,
+body.dark-mode .dominio-nombre-perfil,
+body.dark-mode .dominio-titulo-principal,
+body.dark-mode .dominio-actuales-contenedor h2,
+body.dark-mode .dominio-agregar-contenedor h2,
+body.dark-mode .sobre-nosotros-texto-bloque h2,
+body.dark-mode .tarjeta-info-vm h3,
+body.dark-mode .equipo-contenedor h2,
+body.dark-mode .equipo-miembro span {
+    color: #ffffff;
+}
+
+/* Texto secundario */
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode .item-subtitulo,
+body.dark-mode .item-fecha,
+body.dark-mode .reporte-nombre,
+body.dark-mode .lista-reportes-verificar li,
+body.dark-mode .panel-detalle-vacio-coord p,
+body.dark-mode .subtitulo-resultados-admin,
+body.dark-mode .sesion-detalles p,
+body.dark-mode .tutor-detalle,
+body.dark-mode .perfil-detalles-tutor p,
+body.dark-mode .perfil-descripcion p,
+body.dark-mode .reseña-contenido p,
+body.dark-mode .ajustes-contenido p,
+body.dark-mode .formulario-chat label,
+body.dark-mode .sobre-nosotros-texto-bloque p,
+body.dark-mode .tarjeta-info-vm p {
+    color: #dcdcdc;
+}
+
+/* Botones amarillos (mantenerlos pero con texto oscuro) */
+body.dark-mode .btn-registrase,
+body.dark-mode .llamado-accion-boton,
+body.dark-mode .llamado-accion-boton2,
+body.dark-mode .dash-est-boton-aprender,
+body.dark-mode .dash-est-boton-programar,
+body.dark-mode .tag-busqueda,
+body.dark-mode .tag-tutor,
+body.dark-mode .perfil-tag,
+body.dark-mode .tag-sesion.pendiente,
+body.dark-mode .boton-cambiar-foto,
+body.dark-mode .boton-cambiar-foto-dominio,
+body.dark-mode .dominio-tag {
+    color: #121212;
+    background-color: #ffc107;
+}
+
+/* Botones oscuros (aclararlos) */
+body.dark-mode .btn-iniciarsesion,
+body.dark-mode .dash-est-boton-detalle,
+body.dark-mode .dash-est-boton-calendario,
+body.dark-mode .dash-est-boton-ver-tutores,
+body.dark-mode .boton-buscar-estudiante,
+body.dark-mode .boton-filtros-admin,
+body.dark-mode .boton-accion-coord.aceptar,
+body.dark-mode .boton-ver-todas,
+body.dark-mode .boton-solicitar-tutoria,
+body.dark-mode .boton-chat-guardar,
+body.dark-mode .habilidad-tag {
+    background-color: #007bff; /* Azul brillante */
+    color: #ffffff;
+}
+body.dark-mode .habilidad-tag {
+    background-color: #007bff;
+}
+
+
+/* SVGs que son negros por defecto */
+body.dark-mode svg path[fill="black"] {
+    fill: #e0e0e0;
+}
+body.dark-mode svg path[stroke="black"] {
+    stroke: #e0e0e0;
+}
+
+/* Footer */
+body.dark-mode .seccion-footer {
+    background-color: #111111;
+}
+body.dark-mode .seccion-footer p {
+     color: #999;
+}
+body.dark-de .seccion-footer .terminos-condiciones {
+    color: #8ab4f8;
+}
+
+/* Chat */
+body.dark-mode .burbuja-mensaje.recibido {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+/* Ajustes Sidebar */
+body.dark-mode .ajustes-sidebar,
+body.dark-mode .ajustes-sidebar-chat {
+    background-color: #1e1e1e;
+}
+body.dark-mode .ajustes-link.activo,
+body.dark-mode .ajustes-link-chat.activo {
+    background-color: #f7f9fc;
+    color: #1e1e1e;
+}
+body.dark-mode .ajustes-link,
+body.dark-mode .ajustes-link-chat {
+    color: #e0e0e0;
+}
+ body.dark-mode .ajustes-link:hover,
+ body.dark-mode .ajustes-link-chat:hover {
+    background-color: #333;
+}
+
+/* Tarjetas de equipo */
+body.dark-mode .equipo-miembro {
+    background-color: #1e1e1e;
+}
+
+/* Fix para que los iconos de Ver (ojo) y check (azul) se vean bien */
+body.dark-mode svg path[fill="#183968"] {
+    fill: #8ab4f8;
+}
+body.dark-mode span[class*="verificado-check"],
+body.dark-mode span[class*="verificado-badge"],
+body.dark-mode .icono-verificado-sesion svg path,
+body.dark-mode .icono-verificado-tutor svg path,
+body.dark-mode .icono-verificado-perfil svg path,
+body.dark-mode .icono-filtro-coord svg path {
+    fill: #8ab4f8;
+}
+body.dark-mode .boton-filtros-coord {
+    background-color: #1e1e1e;
+    border-color: #8ab4f8;
+}
+
+/* --- (NUEVO) Estilos para Campos Editables del Perfil --- */
+
+/* Estilo para el botón de editar (lápiz/guardar) */
+.btn-edit-field {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 5px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-edit-field:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Estilo para el campo CUANDO está siendo editado */
+.info-personal span.editable-field-active,
+.descripcion p.editable-field-active {
+  /* Le da un borde punteado para que el usuario sepa que está editando */
+  outline: 2px dashed var(--primary-color, #005a9c);
+  background-color: rgba(0, 90, 156, 0.05);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* (Opcional) Estilo para el header de la descripción */
+.descripcion-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+/* (Opcional) Para modo oscuro, si lo estás usando */
+body.dark-mode .info-personal span.editable-field-active,
+body.dark-mode .descripcion p.editable-field-active {
+  background-color: rgba(138, 180, 248, 0.1);
+  outline-color: #8ab4f8;
+}
